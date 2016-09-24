@@ -1,0 +1,56 @@
+settings:
+- settings:
+    foreground: '<%= ui.foreground_soft.hex %>'
+    background: '<%= ui.background.hex %>'
+
+    gutter: '#14140E'
+    gutterForeground: '#81815A'
+
+    tagsOptions: stippled_underline
+    bracketsForeground: '#CCCC15'
+    bracketsOptions: underline
+    bracketContentsForeground: '#15CC15'
+    bracketContentsOptions: underline
+
+    caret: '#FFFFEE'
+    lineHighlight: '#E0E29010'
+
+    findHighlight: '#CC9D1580'
+    findHighlightForeground: '#FFFFCC'
+
+    guide: '#4E4E36'
+    activeGuide: '#CC9D15CC'
+    stackGuide: '#CC15CC80'
+
+    highlight: '#9D15CCCC'
+    highlightForeground: '#FFCCFF'
+
+    selection: '#4A4A2580'
+    selectionBorder: '#99994D80'
+    inactiveSelection: '#60603040'
+
+    invisibles: '#4E4E36'
+
+    popupCss: "html {
+      background-color: #343424;
+      color: #FFFFB2;
+      padding: 16px;
+    }
+    a {
+      color: #808041;
+      display: block;
+      text-decoration: none;
+    }
+    .error, .deleted {
+      color: #992F2F;
+    }
+    .success, .inserted {
+      color: #2F992F;
+    }
+    .warning, .modified {
+      color: #99992F;
+    }"
+
+    shadow: '#101007'
+    shadowWidth: '30'
+

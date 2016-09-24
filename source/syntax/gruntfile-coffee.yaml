@@ -1,0 +1,10 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/3/syntax.html
+name: ${display_name}
+file_extensions:
+  - gruntfile.coffee
+scope: source.gruntfile.coffee
+contexts:
+  main:
+    - include: scope:source.coffee

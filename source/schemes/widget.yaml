@@ -1,0 +1,26 @@
+#=include parts/header.yaml
+settings:
+- settings:
+    background: '${ui.fields.hex}'
+    caret: '#101010'
+    foreground: '${ui.shadow.hex}'
+    invisibles: '${ui.light_hint.hex}'
+    selection: '${edit.selection1.hex}'
+    selectionBorder: '${edit.border1.hex}'
+- name: Comment
+  scope: comment
+  settings:
+    foreground: '${ui.background_plus2.hex}'
+- name: Keyword
+  scope: keyword, storage
+  settings:
+    foreground: '#330033'
+- scope: constant
+  settings:
+    foreground: '#003300'
+- scope: string
+  settings:
+    foreground: '<% print(ui.shadow.fade(127)) %>'
+- scope: constant.character.escape
+  settings:
+    foreground: '#333366'

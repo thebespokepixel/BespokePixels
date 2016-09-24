@@ -1,0 +1,14 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/3/syntax.html
+name: $(display_name)
+file_extensions:
+  - tmTheme
+  - stTheme
+scope: source.plist, source.sublime-color-scheme
+contexts:
+  main:
+    - match: ""
+      syntax: $(paths.require)
+
+

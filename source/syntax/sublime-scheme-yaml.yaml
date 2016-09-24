@@ -1,0 +1,25 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/3/syntax.html
+name: ${display_name}
+file_extensions:
+  - YAML-stTheme
+  - YAML-tmTheme
+scope: source.yaml, source.sublime-color-scheme
+contexts:
+  prototype:
+    - include: comment
+
+  main:
+    - include: scope:source.yaml
+
+  comment:
+    # http://www.yaml.org/spec/1.2/spec.html#comment//
+    - match: | # l-comment
+        (?x)
+        (?: ^ [ \t]* | [ \t]+ )
+        (?:(\#) \p{Print}* )?
+        (\n|\z)
+      scope: comment.line.number-sign.yaml
+      captures:
+        1: punctuation.definition.comment.line.number-sign.yaml

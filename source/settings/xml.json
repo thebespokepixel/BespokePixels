@@ -1,0 +1,15 @@
+{
+	"extensions": [
+		"xml",
+		"xslt",
+		"xml.dist",
+		"sublime-snippet",
+		"xsd"
+	],
+	"hidden_extensions": [
+		"rss",
+		"vcproj",
+		"tmSnippet",
+		"dae"
+	]
+}

@@ -1,0 +1,123 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/3/syntax.html
+name: plist (Bespoke)
+file_extensions:
+  - plist
+
+first_line_match: '^<\?xml '
+scope: text.plist
+
+contexts:
+  prototype:
+  - include: tag_bits
+
+  main:
+    - include: scope:text.xml
+
+  tag_bits:
+    - match: '(</?)([[:alpha:]:_][[:alnum:]:_.-]*)(>)'
+      captures:
+        1: punctuation.definition.tag.begin.plist
+        2: storage.type.dictionary.plist
+        3: punctuation.definition.tag.end.plist
+
+
+
+      # push:
+      #   - meta_scope: meta.tag.plist
+      #     scope: entity.name.tag.plist
+
+      #   - match: key
+      #     scope: storage.type.dictionary.key.plist
+      #   - match: (dict|string|real|integer|true|false|date|data|array)
+      #     scope: storage.type.dictionary.value.plist
+      #   - match: '>'
+      #     scope: punctuation.definition.tag.end.plist
+      #     set:
+      #       - match: '[[:alpha:]:_][[:alnum:]:_.-]*'
+      #         scope: storage.type.dictionary.key.plist
+      #         pop: true
+
+  #   - match: '(</)'
+
+
+  # dict:
+  #   - match: (<)(dict)(>)
+  #     captures:
+  #       1: punctuation.definition.tag.begin.plist
+  #       2: storage.type.dictionary.plist
+  #       3: punctuation.definition.tag.end.plist
+  #     push:
+  #       - meta_scope: meta.structure.dictionary
+  #       - match: (</)(dict)(>)
+  #         captures:
+  #           1: punctuation.definition.tag.begin.plist
+  #           2: storage.type.dictionary.plist
+  #           3: punctuation.definition.tag.end.plist
+  #         pop: true
+  #   - match: <(string)>
+  #     captures:
+  #       1: storage.type.plist
+  #     push:
+  #       - match: </(string)>
+  #         captures:
+  #           1: storage.type.plist
+  #         pop: true
+  #       - include: cdata
+  #       - match: <|>|(&(?!(gt|lt|amp|apos|quot);))
+  #         scope: invalid.string.plist
+  #       - match: "([^<>&]|(&(gt|lt|amp|apos|quot);))+"
+  #         scope: constant.string.plist
+  #   - match: <(true|false)/>
+  #     captures:
+  #       1: storage.type.plist
+  #   - match: "<(integer)>(0|[1-9][0-9]*)</(integer)>"
+  #     captures:
+  #       1: storage.type.plist
+  #       2: constant.integer.plist
+  #       3: storage.type.plist
+  #   - match: '<(real)>([-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?)</(real)>'
+  #     captures:
+  #       1: storage.type.plist
+  #       2: constant.real.plist
+  #       4: storage.type.plist
+  #   - match: <(date)>(\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)</(date)>
+  #     captures:
+  #       1: storage.type.plist
+  #       2: constant.date.plist
+  #       3: storage.type.plist
+  #   - match: "<(data)>([a-zA-Z0-9+/=]+)</(data)>"
+  #     captures:
+  #       1: storage.type.plist
+  #       2: constant.data.plist
+  #       3: storage.type.plist
+  #   - match: <(array)>
+  #     captures:
+  #       1: storage.type.plist
+  #     push:
+  #       - match: </(array)>
+  #         captures:
+  #           1: storage.type.plist
+  #         pop: true
+  #       - include: scope:text.plist
+  #   - match: <(dict)>
+  #     captures:
+  #       1: storage.type.plist
+  #     push:
+  #       - match: </(dict)>
+  #         captures:
+  #           1: storage.type.plist
+  #         pop: true
+  #       - include: scope:text.plist
+  #   - include: scope:text.xml
+  # cdata:
+  #   - match: '<!\[CDATA\['
+  #     captures:
+  #       0: punctuation.definition.string.begin.plist
+  #     push:
+  #       - meta_scope: string.unquoted.cdata.plist
+  #       - match: "]]>"
+  #         captures:
+  #           0: punctuation.definition.string.end.plist
+  #         pop: true

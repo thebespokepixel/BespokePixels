@@ -1,0 +1,12 @@
+{
+  "name" : "npm ui",
+  "colors" : [
+    {
+      "red" : 0.1672863,
+      "alpha" : 1,
+      "name" : "background",
+      "blue" : 0.04178832,
+      "green" : 0.04178832
+    }
+  ]
+}

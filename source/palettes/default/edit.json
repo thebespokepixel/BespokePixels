@@ -1,0 +1,19 @@
+{
+  "name" : "sublime editing",
+  "colors" : [
+    {
+      "red" : 0.5028261,
+      "alpha" : 0.6989915,
+      "name" : "selection1",
+      "blue" : 0.25377,
+      "green" : 0.5028261
+    },
+    {
+      "red" : 0.3766613,
+      "alpha" : 0.8466904,
+      "name" : "border1",
+      "blue" : 0.1900962,
+      "green" : 0.3766613
+    }
+  ]
+}

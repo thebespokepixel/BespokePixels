@@ -1,0 +1,11 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/3/syntax.html
+name: ${display_name}
+file_extensions:
+  - Dockerfile
+scope: source.shell, source.dockerfile
+contexts:
+  main:
+    - match: ""
+      push: "${paths.external}"

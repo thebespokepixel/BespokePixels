@@ -1,0 +1,55 @@
+/* ─────────────────────────────────────────────────────────────────────────///╮
+ *  Text Input Field                                                           │
+ *///──────────────────────────────────────────────────────────────────────────╯
+
+	// Text input field item
+	{
+		"class": "text_line_control",
+		"layer0.tint": ${ui.fields.rgb},
+		"layer0.opacity": 1,
+		"tint_index": 1,
+		"content_margin": [4, 32, 4, 4]
+	},
+
+	// Text input field item (panels)
+	{
+		"class": "text_line_control",
+		"parents": [{"class": "panel_control"}],
+		"layer0.tint": ${ui.fields.rgb},
+		"content_margin": [4, 3, 4, 3]
+	},
+		// Text input field item (panels)
+	{
+		"class": "text_line_control",
+		"parents": [{"class": "quick_panel"}],
+		"layer0.tint": [255, 178, 124],
+		"content_margin": [4, 3, 4, 3]
+	},
+	{
+		"class": "sheet_container_control",
+		"layer0.tint": [255, 0, 0],
+		"layer0.opacity": 1.0,
+		"content_margin": [4, 63, 4, 63]
+	},
+
+	// Text input field item (overlays)
+	{
+		"class": "text_line_control",
+		"parents": [{"class": "overlay_control"}],
+		"layer0.tint": ${ui.fields.rgb},
+		"content_margin": [4, 2, 4, 3]
+	},
+
+	// Textline input oveflow menu
+	{
+		"class": "dropdown_button_control",
+		"content_margin": [8, 8],
+		"layer0.texture": "Theme - BespokePixels/media/text-dropdown.png",
+		"layer0.tint": [38, 38, 26],
+		"layer0.opacity": 0.5
+	},
+	{
+		"class": "dropdown_button_control",
+		"attributes": ["hover"],
+		"layer0.opacity": 1
+	},

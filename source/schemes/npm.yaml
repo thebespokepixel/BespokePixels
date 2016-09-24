@@ -1,0 +1,41 @@
+#=include parts/header.yaml
+#=include parts/main.yaml
+
+- name: JSON Key - Level 2
+  scope: >-
+    source.json.npm
+    meta meta meta
+    meta.structure.dictionary.json
+    string.quoted.double.json -
+    meta meta meta
+    meta.structure.dictionary.json
+    meta.structure.dictionary.value.json
+    string.quoted.double.json
+  settings:
+    foreground: '<%= json.lvl3.hex %>'
+
+- name: NPM JSON Key - Level 1
+  scope: >-
+    source.json.npm
+    meta
+    meta.structure.dictionary.json
+    string.quoted.double.json -
+    meta meta.structure.dictionary.json
+    meta.structure.dictionary.value.json
+    string.quoted.double.json
+  settings:
+    foreground: '<%= json.lvl2.hex %>'
+
+- name: NPM JSON Key - Level 0
+  scope: >-
+    source.json.npm
+    meta.structure.dictionary.json
+    string.quoted.double.json -
+    meta.structure.dictionary.json
+    meta.structure.dictionary.value.json
+    string.quoted.double.json
+  settings:
+    foreground: '<%= json.lvl1.hex %>'
+
+#=include parts/sublime-linter.yaml
+#=include parts/bracket-highlighter.yaml

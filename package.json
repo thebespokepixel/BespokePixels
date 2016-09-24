@@ -1,0 +1,42 @@
+{
+  "name": "@thebespokepixel/sublime-theme-bespokepixels",
+  "version": "0.0.1",
+  "description": "Sublime Text 3 theme using latests specs",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "keywords": [
+    "sublime",
+    "theme"
+  ],
+  "author": "Mark Griffiths <mark@thebespokepixel.com> (http://thebespokepixel.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "es6-promisify": "^4.1.0",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-data": "^1.2.1",
+    "gulp-include": "^2.3.0",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-template": "^4.0.0",
+    "gulp-util": "^3.0.7",
+    "gulp-yaml": "^1.0.1",
+    "js-yaml": "^3.6.1",
+    "lodash": "^4.13.1",
+    "opencolor": "^0.2.0",
+    "plist": "^1.2.0",
+    "shelljs": "^0.7.0",
+    "through2": "^2.0.1",
+    "tinycolor2": "^1.3.0",
+    "xo": "^0.16.0"
+  },
+  "xo": {
+    "semicolon": false
+  },
+  "dependencies": {
+    "@thebespokepixel/oco-colorvalue-ex": "file:///Users/mark/Projects/TheBespokePixel/Node/oco-colorvalue-ex",
+    "@thebespokepixel/string": "^0.4.0",
+    "lodash": "^4.13.1"
+  }
+}

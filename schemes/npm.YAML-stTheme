@@ -1,0 +1,148 @@
+name: BespokePixels-npm
+uuid: 7b8e23a8-5bf5-4339-83c3-a91d38a634d7
+author: Mark Griffiths
+semanticClass: "BespokePixels.theme.npm.dark"
+colorSpaceName: sRGB
+
+settings:
+- settings:
+    foreground: '#F8F8DF'
+    background: '#2B0B0B'
+
+    gutter: '#14140E'
+    gutterForeground: '#81815A'
+
+    tagsOptions: stippled_underline
+    bracketsForeground: '#CCCC15'
+    bracketsOptions: underline
+    bracketContentsForeground: '#15CC15'
+    bracketContentsOptions: underline
+
+    caret: '#FFFFEE'
+    lineHighlight: '#E0E29010'
+
+    findHighlight: '#CC9D1580'
+    findHighlightForeground: '#FFFFCC'
+
+    guide: '#4E4E36'
+    activeGuide: '#CC9D15CC'
+    stackGuide: '#CC15CC80'
+
+    highlight: '#9D15CCCC'
+    highlightForeground: '#FFCCFF'
+
+    selection: '#4A4A2580'
+    selectionBorder: '#99994D80'
+    inactiveSelection: '#60603040'
+
+    invisibles: '#4E4E36'
+
+    popupCss: "html {
+      background-color: #343424;
+      color: #FFFFB2;
+      padding: 16px;
+    }
+    a {
+      color: #808041;
+      display: block;
+      text-decoration: none;
+    }
+    .error, .deleted {
+      color: #992F2F;
+    }
+    .success, .inserted {
+      color: #2F992F;
+    }
+    .warning, .modified {
+      color: #99992F;
+    }"
+
+    shadow: '#101007'
+    shadowWidth: '30'
+
+
+
+- name: JSON Key - Level 2
+  scope: >-
+    source.json.npm
+    meta meta meta
+    meta.structure.dictionary.json
+    string.quoted.double.json -
+    meta meta meta
+    meta.structure.dictionary.json
+    meta.structure.dictionary.value.json
+    string.quoted.double.json
+  settings:
+    foreground: '#CC5247'
+
+- name: NPM JSON Key - Level 1
+  scope: >-
+    source.json.npm
+    meta
+    meta.structure.dictionary.json
+    string.quoted.double.json -
+    meta meta.structure.dictionary.json
+    meta.structure.dictionary.value.json
+    string.quoted.double.json
+  settings:
+    foreground: '#BF4439'
+
+- name: NPM JSON Key - Level 0
+  scope: >-
+    source.json.npm
+    meta.structure.dictionary.json
+    string.quoted.double.json -
+    meta.structure.dictionary.json
+    meta.structure.dictionary.value.json
+    string.quoted.double.json
+  settings:
+    foreground: '#B3382D'
+
+# Sublime Linter ###############################################################
+- name: SublimeLinter Error
+  scope: sublimelinter.mark.error
+  settings:
+    foreground: '#A20007'
+- name: SublimeLinter Gutter Mark
+  scope: sublimelinter.gutter-mark
+  settings:
+    foreground: '#FFFFFF'
+- name: SublimeLinter Warning
+  scope: sublimelinter.mark.warning
+  settings:
+    foreground: '#DDB700'
+- name: SublimeLinter Annotation
+  scope: sublimelinter.annotations
+  settings:
+    background: '#C17E70'
+
+# Bracket Highlighter ##########################################################
+- name: Bracket Tag
+  scope: brackethighlighter.tag
+  settings:
+    foreground: '#7FFF7F'
+- name: Bracket Curly
+  scope: brackethighlighter.curly
+  settings:
+    foreground: '#CCCC15'
+- name: Bracket Round
+  scope: brackethighlighter.round
+  settings:
+    foreground: '#15CC15'
+- name: Bracket Square
+  scope: brackethighlighter.square
+  settings:
+    foreground: '#CC15CC'
+- name: Bracket Angle
+  scope: brackethighlighter.angle
+  settings:
+    foreground: '#15CCCC'
+- name: Bracket Quote
+  scope: brackethighlighter.quote
+  settings:
+    foreground: '#7F7FFF'
+- name: Bracket Unmatched
+  scope: brackethighlighter.unmatched
+  settings:
+    foreground: '#CC1515'
+

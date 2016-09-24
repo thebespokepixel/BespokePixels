@@ -1,0 +1,6 @@
+paths:
+  scheme: '${paths.root}${paths.package}${paths.schemes}/${stem}${ui_variant}.${extname.scheme}'
+  require: '${paths.root}${paths.package}${paths.syntax}/<% print(obj[requires].provides) %>.${extname.syntax}'
+  external: '${paths.root}/<% print(obj[requires].provides) %>.${extname.syntax}'
+
+display_name: '${display} ${syntax.mark}'

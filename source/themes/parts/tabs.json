@@ -1,0 +1,89 @@
+/* ─────────────────────────────────────────────────────────────────────────///╮
+ *  @Tabs                                                                      │
+ *///──────────────────────────────────────────────────────────────────────────╯
+
+ 	// Tab set
+	{
+		"class": "tabset_control",
+		"layer0.opacity": 1.0,
+		"layer0.tint": [20, 20, 14],
+		"tint_index": 1,
+		"tab_overlap": -1,
+		"tab_width": 160,
+		"tab_min_width": 40,
+		"tab_height": 32,
+		"mouse_wheel_switch": false,
+		"content_margin": [8, 0, 0, 0]
+	},
+	{
+		"class": "tabset_control",
+		"settings": ["mouse_wheel_switches_tabs"],
+		"mouse_wheel_switch": true
+	},
+	{
+		"class": "tab_control",
+		"layer0.opacity": 1.0,
+		"tint_index": 0,
+		"layer2.tint": [74, 74, 37],
+		"layer2.opacity": { "target": 0.2, "speed": 1.0, "interpolation": "smoothstep" },
+		"layer3.tint": [20, 20, 14],
+		"layer3.opacity": 0.6,
+		"layer3.texture": "Theme - BespokePixels/media/shadow-tab.png",
+		"layer3.inner_margin": [0, 0, 0, 28],
+		"content_margin": [8, 0, 4, 0],
+		"max_margin_trim": 0,
+		"hit_test_level": 0.0
+	},
+
+	// Selected current tab
+	{
+		"class": "tab_control", "attributes": ["selected"],
+		"layer2.opacity": 0.0,
+		"layer3.opacity": 0.0
+	},
+
+	// Hovered current tab
+	{
+		"class": "tab_control", "attributes": ["hover"],
+		"layer2.opacity": 0.6
+	},
+
+	// Selected/Hovered current tab
+	{
+		"class": "tab_control", "attributes": ["selected","hover"],
+		"layer2.opacity": 0.0
+	},
+
+	// Tab dirty state
+	{
+		"class": "tab_control",
+		"settings": ["highlight_modified_tabs"],
+		"attributes": ["dirty"],
+		"tint_modifier": [153, 47, 47, 64]
+	},
+	{
+		"class": "tab_control",
+		"settings": ["highlight_modified_tabs"],
+		"attributes": ["dirty", "hover"],
+		"tint_modifier": [153, 47, 47, 128]
+	},
+	{
+		"class": "tab_control",
+		"settings": ["highlight_modified_tabs"],
+		"attributes": ["dirty", "selected"],
+		"tint_modifier": [204, 21, 21, 64]
+	},
+
+	// Tab dirty state (close button hidden)
+	{
+		"class": "tab_control",
+		"settings": ["!show_tab_close_buttons", "highlight_modified_tabs"],
+		"attributes": ["dirty"],
+		"tint_modifier": [204, 21, 21, 64]
+	},
+	{
+		"class": "tab_control",
+		"settings": ["!show_tab_close_buttons", "highlight_modified_tabs"],
+		"attributes": ["dirty", "selected"],
+		"tint_modifier": [204, 21, 21, 40]
+	},

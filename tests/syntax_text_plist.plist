@@ -1,0 +1,6 @@
+<!-- SYNTAX TEXT "Packages/Theme - BespokePixels/syntax/plist.sublime-syntax" -->
+
+  <plist version="1.0">
+  <!--  <- text.plist -->
+      <dict>
+<!--  ^ punctuation.definition.tag.begin.plist -->

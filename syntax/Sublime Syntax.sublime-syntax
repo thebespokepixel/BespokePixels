@@ -1,0 +1,11 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/3/syntax.html
+name: $(display_name)
+file_extensions:
+  - sublime-syntax
+scope: source.yaml, source.sublime-syntax
+contexts:
+  main:
+    - match: ""
+      push: $(paths.require)

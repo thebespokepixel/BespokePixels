@@ -1,0 +1,12 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/3/syntax.html
+name: ${display_name}
+file_extensions:
+  - package.json
+  - .npmignore
+scope: source.json, source.json.npm
+contexts:
+  main:
+    - match: ""
+      push: "${paths.require}"

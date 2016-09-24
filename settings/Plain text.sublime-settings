@@ -1,0 +1,9 @@
+{
+	"extensions": [
+		"changelog",
+		"contributing",
+		"ini",
+		"readme",
+		"txt"
+	]
+}

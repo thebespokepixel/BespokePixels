@@ -1,0 +1,17 @@
+# Sublime Linter ###############################################################
+- name: SublimeLinter Error
+  scope: sublimelinter.mark.error
+  settings:
+    foreground: '#A20007'
+- name: SublimeLinter Gutter Mark
+  scope: sublimelinter.gutter-mark
+  settings:
+    foreground: '#FFFFFF'
+- name: SublimeLinter Warning
+  scope: sublimelinter.mark.warning
+  settings:
+    foreground: '#DDB700'
+- name: SublimeLinter Annotation
+  scope: sublimelinter.annotations
+  settings:
+    background: '#C17E70'

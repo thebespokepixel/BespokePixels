@@ -1,0 +1,13 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/3/syntax.html
+name: ${display_name}
+file_extensions:
+  - ttf
+  - otf
+  - woff
+  - eot
+scope: source.font
+contexts:
+  main:
+    - include: scope:text.plain
