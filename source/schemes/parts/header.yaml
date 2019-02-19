@@ -1,4 +1,4 @@
-name: ${name}${ui_variant}-${basename}
+name: ${name}-${basename}
 uuid: ${uuid}
 author: ${author}
 semanticClass: "${name}.theme<% print(basename === 'theme' ? '' : `.${basename}`) %>.${ui_style}"

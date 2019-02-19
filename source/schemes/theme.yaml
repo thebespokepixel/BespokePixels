@@ -1,881 +1,881 @@
+%YAML 1.2
+---
 #=include parts/header.yaml
 #=include parts/main.yaml
 
-# GENERIC TMLANGUAGE BASE SCOPES ###############################################
-
-- scope: comment
-  settings:
-    foreground: '#80805A'
-
-- scope: constant
-  settings:
-    foreground: '#6F9AFF'
-- scope: constant.numeric
-  settings:
-    foreground: '#AE81FF'
-- scope: constant.character, constant.other
-  settings:
-    foreground: '#DE63FF'
-- scope: constant.language
-  settings:
-    foreground: '#7CA3A2'
-- scope: constant.language.boolean
-  settings:
-    foreground: '#D5D5D5CC'
-- scope: constant.language.boolean.false
-  settings:
-    background: '#4A0000'
-- scope: constant.language.boolean.true
-  settings:
-    background: '#004A00'
-
-- scope: entity
-  settings:
-    foreground: '#EE8600'
-- scope: entity.name.tag
-  settings:
-    foreground: '#46C640'
-
-- scope: invalid, invalid.illegal, invalid.broken
-  settings:
-    background: '#A00A1F'
-    foreground: '#F8F8F0'
-- scope: invalid.deprecated
-  settings:
-    background: '#fc3f47'
-    foreground: '#323230'
-
-- scope: keyword
-  settings:
-    foreground: '#F92672'
-- scope: keyword.operator
-  settings:
-    foreground: '#9F5ACF'
-
-- scope: markup
-  settings:
-    foreground: '#8D8D8D'
-- scope: markup.italic
-  settings:
-    fontStyle: italic
-    foreground: '#D2CFA7'
-- scope: markup.bold
-  settings:
-    fontStyle: bold
-    foreground: '#E9C062'
-- scope: markup.underline
-  settings:
-    fontStyle: underline
-    foreground: '#DFDDCA'
-- scope: markup.quote
-  settings:
-    foreground: '#3399CC'
-- scope: markup.heading
-  settings:
-    background: '#212817'
-    foreground: '#76974C'
-- scope: markup.list
-  settings:
-    foreground: '#D2CFA7'
-- scope: markup.raw
-  settings:
-    foreground: '#578BB3'
-- scope: markup.comment
-  settings:
-    foreground: '#AE81FF'
-- scope: markup.separator
-  settings:
-    background: '#4D4C3C'
-    foreground: '#85893F'
-
-- scope: storage
-  settings:
-    foreground: '#F92672'
-- scope: storage.type
-  settings:
-    foreground: '#EAA254'
-- scope: storage.modifier
-  settings:
-    foreground: '#C55C16'
-
-- scope: string
-  settings:
-    foreground: '#D9D5AD'
-- scope: string.quoted
-  settings:
-    foreground: '#DAD489'
-- scope: string.quoted.double
-  settings:
-    foreground: '#E6DE83'
-- scope: string.regexp
-  settings:
-    background: '#7BB6640B'
-    foreground: '#32C042'
-
-- scope: support
-  settings:
-    foreground: '#C85799'
-- scope: support.function
-  settings:
-    foreground: '#BE44FF'
-- scope: support.variable
-  settings:
-    foreground: '#dbd224'
-- scope: support.variable.node
-  settings:
-    foreground: '#81D81C'
-- scope: support.constant
-  settings:
-    foreground: '#9681ff'
-- name: Library class/type
-  scope: support.type, support.class
-  settings:
-    foreground: '#C4C855'
-
-- scope: variable
-  settings:
-    foreground: '#FC8228'
-- scope: variable.language
-  settings:
-    foreground: '#D2A0D9'
-    fontStyle: 'italic'
-# - scope: variable.parameter
-#   settings:
-#     foreground: '#F4E98F'
-# - scope: variable.parameter.function
-#   settings:
-#     foreground: '#F4E98F'
-
-- scope: variable.function
-  settings:
-    foreground: '#C961FF'
-- scope: variable.assignment
-  settings:
-    foreground: '#F68951'
-- scope: variable.other.readwrite
-  settings:
-    foreground: '#F68951'
-- scope: variable.other.readwrite.import
-  settings:
-    foreground: '#F8604C'
-- scope: variable.other.readwrite.property
-  settings:
-    foreground: '#C7F940'
-
-- scope: entity.name.class
-  settings:
-    foreground: '#A6E22E'
-- scope: entity.other.inherited-class
-  settings:
-    foreground: '#A6E22E'
-- scope: entity.name.function
-  settings:
-    foreground: '#BB44FF'
-
-# META #########################################################################
-
-- scope: comment.line.shebang
-  settings:
-    background: '#369F42'
-    foreground: '#9FE948'
-
-- scope: meta.comment.box-drawing
-  settings:
-    foreground: '#444B68'
-
-- scope: meta.directive.use-strict
-  settings:
-    background: '#363831'
-    foreground: '#B2BD95'
-    fontStyle: 'italic'
-
-- name: Markup XML declaration
-  scope: meta.tag.preprocessor.xml
-  settings:
-    foreground: '#68685B'
-- name: Markup DOCTYPE
-  scope: meta.tag.sgml.doctype, meta.tag.sgml.doctype entity, meta.tag.sgml.doctype
-    string, meta.tag.preprocessor.xml, meta.tag.preprocessor.xml entity, meta.tag.preprocessor.xml
-    string
-  settings:
-    foreground: '#84A4AA'
-- name: Markup DTD
-  scope: string.quoted.docinfo.doctype.DTD
-  settings:
-    foreground: '#5fe45a'
-
-# HTML #########################################################################
-
-- name: Markup tag
-  scope: meta.tag punctuation.definition.tag, meta.tag entity.name.tag
-  settings:
-    foreground: '#2F992F'
-- name: HTML Script tag
-  scope: text.html entity.name.tag.script, text.html source.js punctuation.definition.tag
-  settings:
-    foreground: '#63dbd2'
-- name: HTML Style tag
-  scope: text.html entity.name.tag.style, text.html source.css punctuation.definition.tag
-  settings:
-    foreground: '#A883FF'
-- name: HTML mustache tag
-  scope: text.html entity.name.tag.mustache, text.html meta.tag.template.mustache
-  settings:
-    foreground: '#A0C25F'
-- name: PHP tag
-  scope: text.html source.php punctuation.section.embedded
-  settings:
-    foreground: '#F4005F'
-
-- name: Tag attribute
-  scope: entity.other.attribute-name
-  settings:
-    foreground: '#A6E22E'
-
-- name: Named color
-  scope: support.constant.color, constant.other.color
-  settings:
-    foreground: '#cfd245'
-
-# - name: Object inline property
-#   scope: meta.property.object
-#   settings:
-#     foreground: '#FBB66D'
-# - name: Object key
-#   scope: constant.other.object.key, string.unquoted.label
-#   settings:
-#     foreground: '#A8FF5A'
-
-# - name: Node module
-#   scope: support.module.node
-#   settings:
-#     foreground: '#BFE083'
-# - name: Module
-#   scope: support.type.object.module
-#   settings:
-#     foreground: '#BFE083'
-
-# STATEMENTS ###################################################################
-
-- name: Block, Switch & Conditional Statement
-  scope: >-
-    keyword.control.conditional,
-    keyword.control.switch,
-    punctuation.definition.block,
-    punctuation.definition.expression.conditional,
-    punctuation.definition.expression.switch,
-    punctuation.separator.case-statements
-  settings:
-    foreground: '#CAB18C'
-
-- name: Statement Name
-  scope: >-
-    entity.name.statement,
-    punctuation.separator.label-statement
-  settings:
-    fontStyle: bold
-    foreground: '#8D7C62'
-
-- name: Loop Statements
-  scope: >-
-    keyword.control.loop,
-    punctuation.definition.block.loop,
-    punctuation.definition.expression.loop,
-    punctuation.separator.loop-expression
-  settings:
-    foreground: '#A79DE1'
-
-- name: Try Statements
-  scope: >-
-    keyword.control.trycatch,
-    punctuation.definition.block.trycatch,
-    punctuation.definition.parameters.catch
-  settings:
-    foreground: '#E68CBB'
-
-- name: Try Statement; Catch Parameter
-  scope: >-
-    variable.parameter.catch
-  settings:
-    foreground: '#DC5C9F'
-
-- name: Deprecated Statements
-  scope: >-
-    keyword.other.debugger,
-    keyword.control.with,
-    punctuation.definition.block.with,
-    punctuation.definition.expression.with
-  settings:
-    foreground: '#EB5368'
-
-# DECLARATIONS, METHODS ETC ####################################################
-
-- name: Var, Let, Const Declarations
-  scope: >-
-    storage.type.constant,
-    storage.type.variable,
-    punctuation.separator.binding-binding
-  settings:
-    foreground: '#F4E98F'
-
-- name: Binding Patterns
-  scope: >-
-    entity.other.property-binding,
-    keyword.other.rest,
-    punctuation.definition.binding,
-    punctuation.separator.array-element.binding,
-    punctuation.separator.object-member.binding,
-    punctuation.separator.property-binding
-  settings:
-    foreground: '#C6AA5E'
-
-- name: Parameter Comma, Rest & Binding Patterns
-  scope: >-
-    keyword.operator.assignment.conditional.default,
-    keyword.other.rest.parameter,
-    punctuation.definition.binding.array.parameter,
-    punctuation.definition.binding.object.parameter,
-    punctuation.separator.array-element.binding.parameter,
-    punctuation.separator.object-member.binding.parameter,
-    punctuation.separator.parameter
-  settings:
-    foreground: '#BDA11E'
-
-- name: Async & Await
-  scope: >-
-    keyword.control.flow.await,
-    storage.modifier.async
-  settings:
-    foreground: '#FFCE0C'
-
-- name: Function Keyword
-  scope: storage.type.function
-  settings:
-    foreground: '#FFAC0C'
-
-- name: Function & Return & Do Expression
-  scope: >-
-    entity.name.function,
-    keyword.control.do-expression.do,
-    keyword.control.flow.return,
-    punctuation.definition.block.do-expression,
-    punctuation.definition.function.async.body,
-    punctuation.definition.function.body,
-    punctuation.definition.function.arrow.body,
-    punctuation.definition.parameters.function
-  settings:
-    foreground: '#EE8600'
-
-- name: Generator Keyword
-  scope: >-
-    storage.type.function.generator,
-    storage.modifier.generator.asterisk
-  settings:
-    foreground: '#EAFD1A'
-
-- name: Generator & Yield
-  scope: >-
-    entity.name.function.generator,
-    keyword.control.flow.yield,
-    punctuation.definition.generator.body,
-    punctuation.definition.parameters.generator
-  settings:
-    foreground: '#73C10E'
-
-- name: Class & Object Literal
-  scope: >-
-    entity.name.class,
-    entity.name.constructor,
-    punctuation.definition.class.body,
-    punctuation.definition.constructor.body,
-    punctuation.definition.object,
-    punctuation.definition.parameters.constructor,
-    punctuation.separator.key-value,
-    punctuation.terminator.property,
-    storage.modifier.extends,
-    storage.type.class
-  settings:
-    foreground: '#F97D97'
-
-- name: Class Name
-  scope: entity.name.class
-  settings:
-    fontStyle: 'bold'
-
-- name: Constructor
-  scope: entity.name.constructor
-  settings:
-    fontStyle: 'italic'
-
-- name: Static, Obj Shorthand & Comma
-  scope: >-
-    punctuation.separator.object-member,
-    storage.modifier.static,
-    variable.other.readwrite.property.shorthand
-  settings:
-    foreground: '#FE8D8D'
-
-- name: Object Literal Property
-  scope: >-
-    variable.other.readwrite.property.class,
-    variable.other.readwrite.property.object-literal
-  settings:
-    foreground: '#F4CAB5'
-
-- name: Async Method
-  scope: storage.modifier.async
-  settings:
-    foreground: '#FFAC62'
-
-- name: Accessor Keyword
-  scope: >-
-    storage.modifier.accessor
-  settings:
-    foreground: '#ADE9C6'
-
-- name: Accessor
-  scope: >-
-    entity.name.accessor,
-    keyword.control.flow.return.accessor,
-    punctuation.definition.parameters.accessor,
-    punctuation.definition.accessor.body
-  settings:
-    foreground: '#72DAAD'
-
-- name: Method
-  scope: >-
-    entity.name.method,
-    entity.name.method variable.other.readwrite.property,
-    punctuation.definition.method.async.body,
-    punctuation.definition.method.body,
-    punctuation.definition.parameters.method
-  settings:
-    foreground: '#F4805B'
-
-- name: Generator Method
-  scope: >-
-    entity.name.method.generator,
-    punctuation.definition.method.generator.body,
-    punctuation.definition.parameters.method.generator
-  settings:
-    foreground: '#8FB239'
-
-- name: Decorator
-  scope: >-
-    punctuation.definition.decorator,
-    variable.other.readwrite.decorator
-  settings:
-    fontStyle: 'italic'
-    foreground: '#597873'
-
-- name: Module Import, Export
-  scope: >-
-    storage.type.module keyword.operator
-  # keyword.operator is there because of interoperability scope issues...
-  settings:
-    foreground: '#C2276F'
-
-- name: Module etc
-  scope: >-
-    punctuation.definition.module-binding,
-    punctuation.separator.module-binding,
-    storage.modifier.module
-  settings:
-    foreground: '#E23E8A'
-
-# EXPRESSIONS ##################################################################
-
-- name: Expression Group
-  scope: punctuation.definition.expression
-  settings:
-    foreground: '#FFCE0C'
-
-- name: Property & Accessor Punctuation
-  scope: >-
-    keyword.operator.accessor,
-    punctuation.definition.accessor
-  settings:
-    foreground: '#ADE9C6'
-
-- name: Instantiation & Capitalized Identifiers
-  scope: >-
-    variable.other meta.instantiation,
-    variable.other.readwrite.initCap
-  settings:
-    foreground: '#E273B6'
-
-- name: Invocation
-  scope: >-
-    punctuation.definition.arguments,
-    punctuation.separator.argument,
-    variable.other meta.invocation
-  settings:
-    foreground: '#DB486A'
-
-- name: Undefined
-  scope: constant.language.undefined
-  settings:
-    foreground: '#B0B0B0'
-    fontStyle: 'italic'
-
-- name: Number Components
-  scope: >-
-    meta.numeric.exponent,
-    meta.numeric.prefix
-  settings:
-    foreground: '#5C37FA'
-
-# OTHER / EXPRESSION ###########################################################
-
-- name: Template String Element
-  scope: punctuation.definition.string.interpolated.element
-  settings:
-    foreground: '#89C0B6'
-
-- name: JSX Punctuation; Namespace; Attributes
-  scope: >-
-    meta.namespace.jsx,
-    keyword.operator.accessor.jsx,
-    punctuation.definition.attribute.begin.jsx,
-    punctuation.definition.attribute.end.jsx,
-    punctuation.definition.interpolation.begin.jsx,
-    punctuation.definition.interpolation.end.jsx,
-    punctuation.definition.tag.begin.jsx,
-    punctuation.definition.tag.end.jsx,
-    punctuation.separator.attribute-value.jsx,
-    punctuation.separator.class.jsx,
-    punctuation.separator.namespace.jsx,
-    string.attribute.jsx
-  settings:
-    foreground: '#6E5C67'
-
-- name: JSX Attribute Name
-  scope: variable.other.attribute.jsx
-  settings:
-    foreground: '#8E5C7B'
-
-- name: JSX Element Name
-  scope: entity.name.tag.jsx
-  settings:
-    foreground: '#8C3F6E'
-
-- name: JSX Text
-  scope: string.text.jsx
-  settings:
-    foreground: '#725A43'
-
-- name: JSX Text Entity Reference
-  scope: variable.other.entity-reference.jsx
-  settings:
-    fontStyle: bold
-    foreground: '#916C49'
-
-- name: JSX Interpolated Content
-  scope: meta.interpolation.jsx
-  settings:
-    background: '#212121'
-    fontStyle: italic
-
-# REGEX ########################################################################
-
-- name: Regex Char Classes & Punctuation
-  scope: >-
-    string.regexp constant.other.character-class.predefined,
-    string.regexp constant.other.character-class punctuation,
-    string.regexp constant.other.character-class.set
-  settings:
-    foreground: '#8ABA8A'
-
-- name: Regex Char Class Dash
-  scope: punctuation.definition.character-class.dash.regexp
-  settings:
-    foreground: '#577557'
-
-- name: Regex Char Class Negation
-  scope: keyword.operator.negation.regexp
-  settings:
-    foreground: '#C59764'
-
-- name: Regex Char Classes (Predefined) & Escapes
-  scope: >-
-    string.regexp constant.other.character-class.predefined,
-    string.regexp constant.character.escape,
-    string.regexp keyword.other.back-reference
-  settings:
-    fontStyle: 'bold'
-
-- name: Regex Char Escapes
-  scope: string.regexp constant.character.escape
-  settings:
-    foreground: '#73D226'
-
-- name: Regex Backrefs
-  scope: string.regexp keyword.other.back-reference
-  settings:
-    background: '#173A0A'
-    foreground: '#37BC46'
-
-- name: Regex Quantifiers
-  scope: >-
-    keyword.operator.quantifier.regexp
-  settings:
-    foreground: '#7D9B6D'
-
-- name: Group Punctuation
-  scope: string.regexp meta.group punctuation
-  settings:
-    foreground: '#59A233'
-
-- name: Regex Positive Assertions
-  scope: >-
-    keyword.control.anchor.regexp,
-    string.regexp punctuation.definition.assertion.positive
-  settings:
-    foreground: '#75CEA4'
-
-- name: Regex Positive Assertion Text
-  scope: meta.group.assertion.positive.regexp
-  settings:
-    foreground: '#5FC983'
-
-- name: Regex Negative Assertions
-  scope: string.regexp punctuation.definition.assertion.negative
-  settings:
-    foreground: '#ED804A'
-
-- name: Regex Negative Assertion Text
-  scope: meta.group.assertion.negative.regexp
-  settings:
-    foreground: '#AF9547'
-
-- name: Regex Capturing Groups 1
-  scope: >-
-    meta.group.capturing.regexp
-  settings:
-    background: '#7BB66420'
-
-- name: Regex Capturing Groups 2
-  scope: >-
-    meta.group.capturing.regexp
-    meta.group.capturing.regexp
-  settings:
-    background: '#7BB66435'
-
-- name: Regex Capturing Groups 3
-  scope: >-
-    meta.group.capturing.regexp
-    meta.group.capturing.regexp
-    meta.group.capturing.regexp
-  settings:
-    background: '#7BB6644A'
-
-- name: Regex Capturing Groups 4
-  scope: >-
-    meta.group.capturing.regexp
-    meta.group.capturing.regexp
-    meta.group.capturing.regexp
-    meta.group.capturing.regexp
-  settings:
-    background: '#7BB6645F'
-
-- name: Regex Capturing Groups 5
-  scope: >-
-    meta.group.capturing.regexp
-    meta.group.capturing.regexp
-    meta.group.capturing.regexp
-    meta.group.capturing.regexp
-    meta.group.capturing.regexp
-  settings:
-    background: '#7BB66474'
-
-- name: Regex Capturing Groups 6+
-  scope: >-
-    meta.group.capturing.regexp
-    meta.group.capturing.regexp
-    meta.group.capturing.regexp
-    meta.group.capturing.regexp
-    meta.group.capturing.regexp
-    meta.group.capturing.regexp
-  settings:
-    background: '#7BB664 89'
-
-- name: Regex Outer Punc
-  scope: punctuation.definition.string.regexp
-  settings:
-    foreground: '#496549'
-
-- name: Regex Flags
-  scope: string.regexp.flags
-  settings:
-    fontStyle: italic
-    foreground: '#406E40'
-
-- name: JSON Key - Level 8
-  scope: >-
-    source.json
-    meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta
-    meta.structure.dictionary.json
-    string.quoted.double.json -
-    meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta
-    meta.structure.dictionary.json
-    meta.structure.dictionary.value.json
-    string.quoted.double.json
-  settings:
-    foreground: '#9ACB91'
-
-- name: JSON Key - Level 7
-  scope: >-
-    source.json
-    meta meta meta meta meta meta meta meta meta meta meta meta meta
-    meta.structure.dictionary.json
-    string.quoted.double.json -
-    meta meta meta meta meta meta meta meta meta meta meta meta meta
-    meta.structure.dictionary.json
-    meta.structure.dictionary.value.json
-    string.quoted.double.json
-  settings:
-    foreground: '#8CCB97'
-
-- name: JSON Key - Level 6
-  scope: >-
-    source.json
-    meta meta meta meta meta meta meta meta meta meta meta
-    meta.structure.dictionary.json
-    string.quoted.double.json -
-    meta meta meta meta meta meta meta meta meta meta meta
-    meta.structure.dictionary.json
-    meta.structure.dictionary.value.json
-    string.quoted.double.json
-  settings:
-    foreground: '#88CBAA'
-
-- name: JSON Key - Level 5
-  scope: >-
-    source.json
-    meta meta meta meta meta meta meta meta meta
-    meta.structure.dictionary.json
-    string.quoted.double.json -
-    meta meta meta meta meta meta meta meta meta
-    meta.structure.dictionary.json
-    meta.structure.dictionary.value.json
-    string.quoted.double.json
-  settings:
-    foreground: '#85CBBF'
-
-- name: JSON Key - Level 4
-  scope: >-
-    source.json
-    meta meta meta meta meta meta meta
-    meta.structure.dictionary.json
-    string.quoted.double.json -
-    meta meta meta meta meta meta meta
-    meta.structure.dictionary.json
-    meta.structure.dictionary.value.json
-    string.quoted.double.json
-  settings:
-    foreground: '#7FBECB'
-
-- name: JSON Key - Level 3
-  scope: >-
-    source.json
-    meta meta meta meta meta
-    meta.structure.dictionary.json
-    string.quoted.double.json -
-    meta meta meta meta
-    meta meta.structure.dictionary.json
-    meta.structure.dictionary.value.json
-    string.quoted.double.json
-  settings:
-    foreground: '#7CA3CB'
-
-- name: JSON Key - Level 2
-  scope: >-
-    source.json
-    meta meta meta
-    meta.structure.dictionary.json
-    string.quoted.double.json -
-    meta meta meta
-    meta.structure.dictionary.json
-    meta.structure.dictionary.value.json
-    string.quoted.double.json
-  settings:
-    foreground: '#7985CB'
-
-- name: JSON Key - Level 1
-  scope: >-
-    source.json
-    meta
-    meta.structure.dictionary.json
-    string.quoted.double.json -
-    meta
-    meta.structure.dictionary.json
-    meta.structure.dictionary.value.json
-    string.quoted.double.json
-  settings:
-    foreground: '#8474CB'
-
-- name: JSON Key - Level 0
-  scope: >-
-    source.json
-    meta.structure.dictionary.json
-    string.quoted.double.json -
-    meta.structure.dictionary.json
-    meta.structure.dictionary.value.json
-    string.quoted.double.json
-  settings:
-    foreground: '#9E6FCB'
-
-
-
-- name: css.id
-  scope: entity.other.attribute-name.id.css
-  settings:
-    foreground: '#FFFF7F'
-
-- name: css.class
-  scope: entity.other.attribute-name.class
-  settings:
-    foreground: '#6fafff'
-- name: css.value
-  scope: meta.property-value.css, support.constant.property-value.css
-  settings:
-    foreground: '#75cd50'
-- name: less.mixin
-  scope: entity.other.less.mixin
-  settings:
-    foreground: '#98E124'
-- name: css.attribute
-  scope: meta.property-list.css meta.property-name.css, support.type.property-name.css
-  settings:
-    foreground: '#b5b406'
-- name: css.string
-  scope: meta.attribute-selector.css
-  settings:
-    foreground: '#FF950A'
-- name: diff.header
-  scope: meta.diff, meta.diff.header
-  settings:
-    foreground: '#75715E'
-- name: diff.deleted
-  scope: markup.deleted
-  settings:
-    foreground: '#F92672'
-- name: diff.inserted
-  scope: markup.inserted
-  settings:
-    foreground: '#A6E22E'
-- name: diff.changed
-  scope: markup.changed
-  settings:
-    foreground: '#E6DB74'
-- scope: constant.numeric.line-number.find-in-files - match
-  settings:
-    foreground: '#AE81FFA0'
-- scope: entity.name.filename.find-in-files
-  settings:
-    foreground: '#E6DB74'
+  # GENERIC TMLANGUAGE BASE SCOPES #############################################
+
+  - scope: comment
+    settings:
+      foreground: '#80805A'
+
+  - scope: constant
+    settings:
+      foreground: '#6F9AFF'
+  - scope: constant.numeric
+    settings:
+      foreground: '#AE81FF'
+  - scope: constant.character, constant.other
+    settings:
+      foreground: '#DE63FF'
+  - scope: constant.language
+    settings:
+      foreground: '#7CA3A2'
+  - scope: constant.language.boolean
+    settings:
+      foreground: '#D5D5D5CC'
+  - scope: constant.language.boolean.false
+    settings:
+      background: '#4A0000'
+  - scope: constant.language.boolean.true
+    settings:
+      background: '#004A00'
+
+  - scope: entity
+    settings:
+      foreground: '#EE8600'
+  - scope: entity.name.tag
+    settings:
+      foreground: '#46C640'
+
+  - scope: invalid, invalid.illegal, invalid.broken
+    settings:
+      background: '#A00A1F'
+      foreground: '#F8F8F0'
+  - scope: invalid.deprecated
+    settings:
+      background: '#fc3f47'
+      foreground: '#323230'
+
+  - scope: keyword
+    settings:
+      foreground: '#F92672'
+  - scope: keyword.operator
+    settings:
+      foreground: '#9F5ACF'
+
+  - scope: markup
+    settings:
+      foreground: '#8D8D8D'
+  - scope: markup.italic
+    settings:
+      fontStyle: italic
+      foreground: '#D2CFA7'
+  - scope: markup.bold
+    settings:
+      fontStyle: bold
+      foreground: '#E9C062'
+  - scope: markup.underline
+    settings:
+      fontStyle: underline
+      foreground: '#DFDDCA'
+  - scope: markup.quote
+    settings:
+      foreground: '#3399CC'
+  - scope: markup.heading
+    settings:
+      background: '#212817'
+      foreground: '#76974C'
+  - scope: markup.list
+    settings:
+      foreground: '#D2CFA7'
+  - scope: markup.raw
+    settings:
+      foreground: '#578BB3'
+  - scope: markup.comment
+    settings:
+      foreground: '#AE81FF'
+  - scope: markup.separator
+    settings:
+      background: '#4D4C3C'
+      foreground: '#85893F'
+
+  - scope: storage
+    settings:
+      foreground: '#F92672'
+  - scope: storage.type
+    settings:
+      foreground: '#EAA254'
+  - scope: storage.modifier
+    settings:
+      foreground: '#C55C16'
+
+  - scope: string
+    settings:
+      foreground: '#D9D5AD'
+  - scope: string.quoted
+    settings:
+      foreground: '#DAD489'
+  - scope: string.quoted.double
+    settings:
+      foreground: '#E6DE83'
+  - scope: string.regexp
+    settings:
+      background: '#7BB6640B'
+      foreground: '#32C042'
+
+  - scope: support
+    settings:
+      foreground: '#C85799'
+  - scope: support.function
+    settings:
+      foreground: '#BE44FF'
+  - scope: support.variable
+    settings:
+      foreground: '#dbd224'
+  - scope: support.variable.node
+    settings:
+      foreground: '#81D81C'
+  - scope: support.constant
+    settings:
+      foreground: '#9681ff'
+  - name: Library class/type
+    scope: support.type, support.class
+    settings:
+      foreground: '#C4C855'
+
+  - scope: variable
+    settings:
+      foreground: '#FC8228'
+  - scope: variable.language
+    settings:
+      foreground: '#D2A0D9'
+      fontStyle: 'italic'
+  # - scope: variable.parameter
+  #   settings:
+  #     foreground: '#F4E98F'
+  # - scope: variable.parameter.function
+  #   settings:
+  #     foreground: '#F4E98F'
+
+  - scope: variable.function
+    settings:
+      foreground: '#C961FF'
+  - scope: variable.assignment
+    settings:
+      foreground: '#F68951'
+  - scope: variable.other.readwrite
+    settings:
+      foreground: '#F68951'
+  - scope: variable.other.readwrite.import
+    settings:
+      foreground: '#F8604C'
+  - scope: variable.other.readwrite.property
+    settings:
+      foreground: '#C7F940'
+
+  - scope: entity.name.class
+    settings:
+      foreground: '#A6E22E'
+  - scope: entity.other.inherited-class
+    settings:
+      foreground: '#A6E22E'
+  - scope: entity.name.function
+    settings:
+      foreground: '#BB44FF'
+
+  # META #######################################################################
+
+  - scope: comment.line.shebang
+    settings:
+      background: '#369F42'
+      foreground: '#9FE948'
+
+  - scope: meta.comment.box-drawing
+    settings:
+      foreground: '#444B68'
+
+  - scope: meta.directive.use-strict
+    settings:
+      background: '#363831'
+      foreground: '#B2BD95'
+      fontStyle: 'italic'
+
+  - name: Markup XML declaration
+    scope: meta.tag.preprocessor.xml
+    settings:
+      foreground: '#68685B'
+  - name: Markup DOCTYPE
+    scope: meta.tag.sgml.doctype, meta.tag.sgml.doctype entity, meta.tag.sgml.doctype
+      string, meta.tag.preprocessor.xml, meta.tag.preprocessor.xml entity, meta.tag.preprocessor.xml
+      string
+    settings:
+      foreground: '#84A4AA'
+  - name: Markup DTD
+    scope: string.quoted.docinfo.doctype.DTD
+    settings:
+      foreground: '#5fe45a'
+
+  # HTML #######################################################################
+
+  - name: Markup tag
+    scope: meta.tag punctuation.definition.tag, meta.tag entity.name.tag
+    settings:
+      foreground: '#2F992F'
+  - name: HTML Script tag
+    scope: text.html entity.name.tag.script, text.html source.js punctuation.definition.tag
+    settings:
+      foreground: '#63dbd2'
+  - name: HTML Style tag
+    scope: text.html entity.name.tag.style, text.html source.css punctuation.definition.tag
+    settings:
+      foreground: '#A883FF'
+  - name: HTML mustache tag
+    scope: text.html entity.name.tag.mustache, text.html meta.tag.template.mustache
+    settings:
+      foreground: '#A0C25F'
+  - name: PHP tag
+    scope: text.html source.php punctuation.section.embedded
+    settings:
+      foreground: '#F4005F'
+
+  - name: Tag attribute
+    scope: entity.other.attribute-name
+    settings:
+      foreground: '#A6E22E'
+
+  - name: Named color
+    scope: support.constant.color, constant.other.color
+    settings:
+      foreground: '#cfd245'
+
+  # - name: Object inline property
+  #   scope: meta.property.object
+  #   settings:
+  #     foreground: '#FBB66D'
+  # - name: Object key
+  #   scope: constant.other.object.key, string.unquoted.label
+  #   settings:
+  #     foreground: '#A8FF5A'
+
+  # - name: Node module
+  #   scope: support.module.node
+  #   settings:
+  #     foreground: '#BFE083'
+  # - name: Module
+  #   scope: support.type.object.module
+  #   settings:
+  #     foreground: '#BFE083'
+
+  # STATEMENTS #################################################################
+
+  - name: Block, Switch & Conditional Statement
+    scope: >-
+      keyword.control.conditional,
+      keyword.control.switch,
+      punctuation.definition.block,
+      punctuation.definition.expression.conditional,
+      punctuation.definition.expression.switch,
+      punctuation.separator.case-statements
+    settings:
+      foreground: '#CAB18C'
+
+  - name: Statement Name
+    scope: >-
+      entity.name.statement,
+      punctuation.separator.label-statement
+    settings:
+      fontStyle: bold
+      foreground: '#8D7C62'
+
+  - name: Loop Statements
+    scope: >-
+      keyword.control.loop,
+      punctuation.definition.block.loop,
+      punctuation.definition.expression.loop,
+      punctuation.separator.loop-expression
+    settings:
+      foreground: '#A79DE1'
+
+  - name: Try Statements
+    scope: >-
+      keyword.control.trycatch,
+      punctuation.definition.block.trycatch,
+      punctuation.definition.parameters.catch
+    settings:
+      foreground: '#E68CBB'
+
+  - name: Try Statement; Catch Parameter
+    scope: >-
+      variable.parameter.catch
+    settings:
+      foreground: '#DC5C9F'
+
+  - name: Deprecated Statements
+    scope: >-
+      keyword.other.debugger,
+      keyword.control.with,
+      punctuation.definition.block.with,
+      punctuation.definition.expression.with
+    settings:
+      foreground: '#EB5368'
+
+  # DECLARATIONS, METHODS ETC ##################################################
+
+  - name: Var, Let, Const Declarations
+    scope: >-
+      storage.type.constant,
+      storage.type.variable,
+      punctuation.separator.binding-binding
+    settings:
+      foreground: '#F4E98F'
+
+  - name: Binding Patterns
+    scope: >-
+      entity.other.property-binding,
+      keyword.other.rest,
+      punctuation.definition.binding,
+      punctuation.separator.array-element.binding,
+      punctuation.separator.object-member.binding,
+      punctuation.separator.property-binding
+    settings:
+      foreground: '#C6AA5E'
+
+  - name: Parameter Comma, Rest & Binding Patterns
+    scope: >-
+      keyword.operator.assignment.conditional.default,
+      keyword.other.rest.parameter,
+      punctuation.definition.binding.array.parameter,
+      punctuation.definition.binding.object.parameter,
+      punctuation.separator.array-element.binding.parameter,
+      punctuation.separator.object-member.binding.parameter,
+      punctuation.separator.parameter
+    settings:
+      foreground: '#BDA11E'
+
+  - name: Async & Await
+    scope: >-
+      keyword.control.flow.await,
+      storage.modifier.async
+    settings:
+      foreground: '#FFCE0C'
+
+  - name: Function Keyword
+    scope: storage.type.function
+    settings:
+      foreground: '#FFAC0C'
+
+  - name: Function & Return & Do Expression
+    scope: >-
+      entity.name.function,
+      keyword.control.do-expression.do,
+      keyword.control.flow.return,
+      punctuation.definition.block.do-expression,
+      punctuation.definition.function.async.body,
+      punctuation.definition.function.body,
+      punctuation.definition.function.arrow.body,
+      punctuation.definition.parameters.function
+    settings:
+      foreground: '#EE8600'
+
+  - name: Generator Keyword
+    scope: >-
+      storage.type.function.generator,
+      storage.modifier.generator.asterisk
+    settings:
+      foreground: '#EAFD1A'
+
+  - name: Generator & Yield
+    scope: >-
+      entity.name.function.generator,
+      keyword.control.flow.yield,
+      punctuation.definition.generator.body,
+      punctuation.definition.parameters.generator
+    settings:
+      foreground: '#73C10E'
+
+  - name: Class & Object Literal
+    scope: >-
+      entity.name.class,
+      entity.name.constructor,
+      punctuation.definition.class.body,
+      punctuation.definition.constructor.body,
+      punctuation.definition.object,
+      punctuation.definition.parameters.constructor,
+      punctuation.separator.key-value,
+      punctuation.terminator.property,
+      storage.modifier.extends,
+      storage.type.class
+    settings:
+      foreground: '#F97D97'
+
+  - name: Class Name
+    scope: entity.name.class
+    settings:
+      fontStyle: 'bold'
+
+  - name: Constructor
+    scope: entity.name.constructor
+    settings:
+      fontStyle: 'italic'
+
+  - name: Static, Obj Shorthand & Comma
+    scope: >-
+      punctuation.separator.object-member,
+      storage.modifier.static,
+      variable.other.readwrite.property.shorthand
+    settings:
+      foreground: '#FE8D8D'
+
+  - name: Object Literal Property
+    scope: >-
+      variable.other.readwrite.property.class,
+      variable.other.readwrite.property.object-literal
+    settings:
+      foreground: '#F4CAB5'
+
+  - name: Async Method
+    scope: storage.modifier.async
+    settings:
+      foreground: '#FFAC62'
+
+  - name: Accessor Keyword
+    scope: >-
+      storage.modifier.accessor
+    settings:
+      foreground: '#ADE9C6'
+
+  - name: Accessor
+    scope: >-
+      entity.name.accessor,
+      keyword.control.flow.return.accessor,
+      punctuation.definition.parameters.accessor,
+      punctuation.definition.accessor.body
+    settings:
+      foreground: '#72DAAD'
+
+  - name: Method
+    scope: >-
+      entity.name.method,
+      entity.name.method variable.other.readwrite.property,
+      punctuation.definition.method.async.body,
+      punctuation.definition.method.body,
+      punctuation.definition.parameters.method
+    settings:
+      foreground: '#F4805B'
+
+  - name: Generator Method
+    scope: >-
+      entity.name.method.generator,
+      punctuation.definition.method.generator.body,
+      punctuation.definition.parameters.method.generator
+    settings:
+      foreground: '#8FB239'
+
+  - name: Decorator
+    scope: >-
+      punctuation.definition.decorator,
+      variable.other.readwrite.decorator
+    settings:
+      fontStyle: 'italic'
+      foreground: '#597873'
+
+  - name: Module Import, Export
+    scope: >-
+      storage.type.module keyword.operator
+    # keyword.operator is there because of interoperability scope issues...
+    settings:
+      foreground: '#C2276F'
+
+  - name: Module etc
+    scope: >-
+      punctuation.definition.module-binding,
+      punctuation.separator.module-binding,
+      storage.modifier.module
+    settings:
+      foreground: '#E23E8A'
+
+  # EXPRESSIONS ################################################################
+
+  - name: Expression Group
+    scope: punctuation.definition.expression
+    settings:
+      foreground: '#FFCE0C'
+
+  - name: Property & Accessor Punctuation
+    scope: >-
+      keyword.operator.accessor,
+      punctuation.definition.accessor
+    settings:
+      foreground: '#ADE9C6'
+
+  - name: Instantiation & Capitalized Identifiers
+    scope: >-
+      variable.other meta.instantiation,
+      variable.other.readwrite.initCap
+    settings:
+      foreground: '#E273B6'
+
+  - name: Invocation
+    scope: >-
+      punctuation.definition.arguments,
+      punctuation.separator.argument,
+      variable.other meta.invocation
+    settings:
+      foreground: '#DB486A'
+
+  - name: Undefined
+    scope: constant.language.undefined
+    settings:
+      foreground: '#B0B0B0'
+      fontStyle: 'italic'
+
+  - name: Number Components
+    scope: >-
+      meta.numeric.exponent,
+      meta.numeric.prefix
+    settings:
+      foreground: '#5C37FA'
+
+  # OTHER / EXPRESSION #########################################################
+
+  - name: Template String Element
+    scope: punctuation.definition.string.interpolated.element
+    settings:
+      foreground: '#89C0B6'
+
+  - name: JSX Punctuation; Namespace; Attributes
+    scope: >-
+      meta.namespace.jsx,
+      keyword.operator.accessor.jsx,
+      punctuation.definition.attribute.begin.jsx,
+      punctuation.definition.attribute.end.jsx,
+      punctuation.definition.interpolation.begin.jsx,
+      punctuation.definition.interpolation.end.jsx,
+      punctuation.definition.tag.begin.jsx,
+      punctuation.definition.tag.end.jsx,
+      punctuation.separator.attribute-value.jsx,
+      punctuation.separator.class.jsx,
+      punctuation.separator.namespace.jsx,
+      string.attribute.jsx
+    settings:
+      foreground: '#6E5C67'
+
+  - name: JSX Attribute Name
+    scope: variable.other.attribute.jsx
+    settings:
+      foreground: '#8E5C7B'
+
+  - name: JSX Element Name
+    scope: entity.name.tag.jsx
+    settings:
+      foreground: '#8C3F6E'
+
+  - name: JSX Text
+    scope: string.text.jsx
+    settings:
+      foreground: '#725A43'
+
+  - name: JSX Text Entity Reference
+    scope: variable.other.entity-reference.jsx
+    settings:
+      fontStyle: bold
+      foreground: '#916C49'
+
+  - name: JSX Interpolated Content
+    scope: meta.interpolation.jsx
+    settings:
+      background: '#212121'
+      fontStyle: italic
+
+  # REGEX ######################################################################
+
+  - name: Regex Char Classes & Punctuation
+    scope: >-
+      string.regexp constant.other.character-class.predefined,
+      string.regexp constant.other.character-class punctuation,
+      string.regexp constant.other.character-class.set
+    settings:
+      foreground: '#8ABA8A'
+
+  - name: Regex Char Class Dash
+    scope: punctuation.definition.character-class.dash.regexp
+    settings:
+      foreground: '#577557'
+
+  - name: Regex Char Class Negation
+    scope: keyword.operator.negation.regexp
+    settings:
+      foreground: '#C59764'
+
+  - name: Regex Char Classes (Predefined) & Escapes
+    scope: >-
+      string.regexp constant.other.character-class.predefined,
+      string.regexp constant.character.escape,
+      string.regexp keyword.other.back-reference
+    settings:
+      fontStyle: 'bold'
+
+  - name: Regex Char Escapes
+    scope: string.regexp constant.character.escape
+    settings:
+      foreground: '#73D226'
+
+  - name: Regex Backrefs
+    scope: string.regexp keyword.other.back-reference
+    settings:
+      background: '#173A0A'
+      foreground: '#37BC46'
+
+  - name: Regex Quantifiers
+    scope: >-
+      keyword.operator.quantifier.regexp
+    settings:
+      foreground: '#7D9B6D'
+
+  - name: Group Punctuation
+    scope: string.regexp meta.group punctuation
+    settings:
+      foreground: '#59A233'
+
+  - name: Regex Positive Assertions
+    scope: >-
+      keyword.control.anchor.regexp,
+      string.regexp punctuation.definition.assertion.positive
+    settings:
+      foreground: '#75CEA4'
+
+  - name: Regex Positive Assertion Text
+    scope: meta.group.assertion.positive.regexp
+    settings:
+      foreground: '#5FC983'
+
+  - name: Regex Negative Assertions
+    scope: string.regexp punctuation.definition.assertion.negative
+    settings:
+      foreground: '#ED804A'
+
+  - name: Regex Negative Assertion Text
+    scope: meta.group.assertion.negative.regexp
+    settings:
+      foreground: '#AF9547'
+
+  - name: Regex Capturing Groups 1
+    scope: >-
+      meta.group.capturing.regexp
+    settings:
+      background: '#7BB66420'
+
+  - name: Regex Capturing Groups 2
+    scope: >-
+      meta.group.capturing.regexp
+      meta.group.capturing.regexp
+    settings:
+      background: '#7BB66435'
+
+  - name: Regex Capturing Groups 3
+    scope: >-
+      meta.group.capturing.regexp
+      meta.group.capturing.regexp
+      meta.group.capturing.regexp
+    settings:
+      background: '#7BB6644A'
+
+  - name: Regex Capturing Groups 4
+    scope: >-
+      meta.group.capturing.regexp
+      meta.group.capturing.regexp
+      meta.group.capturing.regexp
+      meta.group.capturing.regexp
+    settings:
+      background: '#7BB6645F'
+
+  - name: Regex Capturing Groups 5
+    scope: >-
+      meta.group.capturing.regexp
+      meta.group.capturing.regexp
+      meta.group.capturing.regexp
+      meta.group.capturing.regexp
+      meta.group.capturing.regexp
+    settings:
+      background: '#7BB66474'
+
+  - name: Regex Capturing Groups 6+
+    scope: >-
+      meta.group.capturing.regexp
+      meta.group.capturing.regexp
+      meta.group.capturing.regexp
+      meta.group.capturing.regexp
+      meta.group.capturing.regexp
+      meta.group.capturing.regexp
+    settings:
+      background: '#7BB664 89'
+
+  - name: Regex Outer Punc
+    scope: punctuation.definition.string.regexp
+    settings:
+      foreground: '#496549'
+
+  - name: Regex Flags
+    scope: string.regexp.flags
+    settings:
+      fontStyle: italic
+      foreground: '#406E40'
+
+  - name: JSON Key - Level 8
+    scope: >-
+      source.json
+      meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta
+      meta.structure.dictionary.json
+      string.quoted.double.json -
+      meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta
+      meta.structure.dictionary.json
+      meta.structure.dictionary.value.json
+      string.quoted.double.json
+    settings:
+      foreground: '#9ACB91'
+
+  - name: JSON Key - Level 7
+    scope: >-
+      source.json
+      meta meta meta meta meta meta meta meta meta meta meta meta meta
+      meta.structure.dictionary.json
+      string.quoted.double.json -
+      meta meta meta meta meta meta meta meta meta meta meta meta meta
+      meta.structure.dictionary.json
+      meta.structure.dictionary.value.json
+      string.quoted.double.json
+    settings:
+      foreground: '#8CCB97'
+
+  - name: JSON Key - Level 6
+    scope: >-
+      source.json
+      meta meta meta meta meta meta meta meta meta meta meta
+      meta.structure.dictionary.json
+      string.quoted.double.json -
+      meta meta meta meta meta meta meta meta meta meta meta
+      meta.structure.dictionary.json
+      meta.structure.dictionary.value.json
+      string.quoted.double.json
+    settings:
+      foreground: '#88CBAA'
+
+  - name: JSON Key - Level 5
+    scope: >-
+      source.json
+      meta meta meta meta meta meta meta meta meta
+      meta.structure.dictionary.json
+      string.quoted.double.json -
+      meta meta meta meta meta meta meta meta meta
+      meta.structure.dictionary.json
+      meta.structure.dictionary.value.json
+      string.quoted.double.json
+    settings:
+      foreground: '#85CBBF'
+
+  - name: JSON Key - Level 4
+    scope: >-
+      source.json
+      meta meta meta meta meta meta meta
+      meta.structure.dictionary.json
+      string.quoted.double.json -
+      meta meta meta meta meta meta meta
+      meta.structure.dictionary.json
+      meta.structure.dictionary.value.json
+      string.quoted.double.json
+    settings:
+      foreground: '#7FBECB'
+
+  - name: JSON Key - Level 3
+    scope: >-
+      source.json
+      meta meta meta meta meta
+      meta.structure.dictionary.json
+      string.quoted.double.json -
+      meta meta meta meta
+      meta meta.structure.dictionary.json
+      meta.structure.dictionary.value.json
+      string.quoted.double.json
+    settings:
+      foreground: '#7CA3CB'
+
+  - name: JSON Key - Level 2
+    scope: >-
+      source.json
+      meta meta meta
+      meta.structure.dictionary.json
+      string.quoted.double.json -
+      meta meta meta
+      meta.structure.dictionary.json
+      meta.structure.dictionary.value.json
+      string.quoted.double.json
+    settings:
+      foreground: '#7985CB'
+
+  - name: JSON Key - Level 1
+    scope: >-
+      source.json
+      meta
+      meta.structure.dictionary.json
+      string.quoted.double.json -
+      meta
+      meta.structure.dictionary.json
+      meta.structure.dictionary.value.json
+      string.quoted.double.json
+    settings:
+      foreground: '#8474CB'
+
+  - name: JSON Key - Level 0
+    scope: >-
+      source.json
+      meta.structure.dictionary.json
+      string.quoted.double.json -
+      meta.structure.dictionary.json
+      meta.structure.dictionary.value.json
+      string.quoted.double.json
+    settings:
+      foreground: '#9E6FCB'
+
+
+
+  - name: css.id
+    scope: entity.other.attribute-name.id.css
+    settings:
+      foreground: '#FFFF7F'
+
+  - name: css.class
+    scope: entity.other.attribute-name.class
+    settings:
+      foreground: '#6fafff'
+  - name: css.value
+    scope: meta.property-value.css, support.constant.property-value.css
+    settings:
+      foreground: '#75cd50'
+  - name: less.mixin
+    scope: entity.other.less.mixin
+    settings:
+      foreground: '#98E124'
+  - name: css.attribute
+    scope: meta.property-list.css meta.property-name.css, support.type.property-name.css
+    settings:
+      foreground: '#b5b406'
+  - name: css.string
+    scope: meta.attribute-selector.css
+    settings:
+      foreground: '#FF950A'
+  - name: diff.header
+    scope: meta.diff, meta.diff.header
+    settings:
+      foreground: '#75715E'
+  - name: diff.deleted
+    scope: markup.deleted
+    settings:
+      foreground: '#F92672'
+  - name: diff.inserted
+    scope: markup.inserted
+    settings:
+      foreground: '#A6E22E'
+  - name: diff.changed
+    scope: markup.changed
+    settings:
+      foreground: '#E6DB74'
+  - scope: constant.numeric.line-number.find-in-files - match
+    settings:
+      foreground: '#AE81FFA0'
+  - scope: entity.name.filename.find-in-files
+    settings:
+      foreground: '#E6DB74'
 
 #=include parts/sublime-linter.yaml
 #=include parts/bracket-highlighter.yaml
-
-

@@ -1,29 +1,29 @@
-# Bracket Highlighter ##########################################################
-- name: Bracket Tag
-  scope: brackethighlighter.tag
-  settings:
-    foreground: '#7FFF7F'
-- name: Bracket Curly
-  scope: brackethighlighter.curly
-  settings:
-    foreground: '#CCCC15'
-- name: Bracket Round
-  scope: brackethighlighter.round
-  settings:
-    foreground: '#15CC15'
-- name: Bracket Square
-  scope: brackethighlighter.square
-  settings:
-    foreground: '#CC15CC'
-- name: Bracket Angle
-  scope: brackethighlighter.angle
-  settings:
-    foreground: '#15CCCC'
-- name: Bracket Quote
-  scope: brackethighlighter.quote
-  settings:
-    foreground: '#7F7FFF'
-- name: Bracket Unmatched
-  scope: brackethighlighter.unmatched
-  settings:
-    foreground: '#CC1515'
+  # Bracket Highlighter ##########################################################
+  - name: Bracket Tag
+    scope: brackethighlighter.tag
+    settings:
+      foreground: '${palette.brackets.tag.hex}'
+  - name: Bracket Curly
+    scope: brackethighlighter.curly
+    settings:
+      foreground: '${palette.brackets.curly.hex}'
+  - name: Bracket Round
+    scope: brackethighlighter.round
+    settings:
+      foreground: '${palette.brackets.round.hex}'
+  - name: Bracket Square
+    scope: brackethighlighter.square
+    settings:
+      foreground: '${palette.brackets.square.hex}'
+  - name: Bracket Angle
+    scope: brackethighlighter.angle
+    settings:
+      foreground: '${palette.brackets.angle.hex}'
+  - name: Bracket Quote
+    scope: brackethighlighter.quote
+    settings:
+      foreground: '${palette.brackets.quote.hex}'
+  - name: Bracket Unmatched
+    scope: brackethighlighter.unmatched
+    settings:
+      foreground: '${palette.brackets.unmatched.hex}'

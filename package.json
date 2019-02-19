@@ -3,8 +3,10 @@
   "version": "0.0.1",
   "description": "Sublime Text 3 theme using latests specs",
   "main": "gulpfile.js",
+  "repository": "https://MarkGriffiths@github.com/MarkGriffiths/BespokePixels.git",
   "scripts": {
-    "test": "xo && ava"
+    "test": "xo && ava",
+    "readme": "compile-readme -u source/docs/example.md source/docs/readme.md > readme.md"
   },
   "keywords": [
     "sublime",
@@ -13,30 +15,48 @@
   "author": "Mark Griffiths <mark@thebespokepixel.com> (http://thebespokepixel.com/)",
   "license": "MIT",
   "devDependencies": {
-    "es6-promisify": "^4.1.0",
-    "gulp": "github:gulpjs/gulp#4.0",
+    "@thebespokepixel/badges": "^1.0.2",
+    "@thebespokepixel/oco-colorvalue-ex": "^1.0.0",
+    "@thebespokepixel/palette2oco": "^1.0.1",
+    "@thebespokepixel/string": "^0.4.0",
+    "gulp": "4.0.0",
     "gulp-data": "^1.2.1",
     "gulp-include": "^2.3.0",
     "gulp-load-plugins": "^1.2.4",
     "gulp-rename": "^1.2.2",
-    "gulp-template": "^4.0.0",
-    "gulp-util": "^3.0.7",
-    "gulp-yaml": "^1.0.1",
+    "gulp-template": "^5.0.0",
+    "gulp-yaml": "^2.0.3",
     "js-yaml": "^3.6.1",
     "lodash": "^4.13.1",
     "opencolor": "^0.2.0",
-    "plist": "^1.2.0",
-    "shelljs": "^0.7.0",
-    "through2": "^2.0.1",
-    "tinycolor2": "^1.3.0",
-    "xo": "^0.16.0"
+    "plist": "^3.0.1",
+    "plugin-error": "^1.0.1",
+    "through2": "^3.0.0",
+    "trash": "^4.3.0",
+    "xo": "^0.24.0"
   },
   "xo": {
     "semicolon": false
   },
-  "dependencies": {
-    "@thebespokepixel/oco-colorvalue-ex": "file:///Users/mark/Projects/TheBespokePixel/Node/oco-colorvalue-ex",
-    "@thebespokepixel/string": "^0.4.0",
-    "lodash": "^4.13.1"
+  "badges": {
+    "github": "MarkGriffiths",
+    "npm": "thebespokepixel",
+    "name": "BespokePixels",
+    "providers": {
+      "status": {
+        "text": "Sublime Text",
+        "color": "FF9801"
+      }
+    },
+    "readme": {
+      "Status": [
+        [
+          "status",
+          "greenkeeper",
+          "david-dev",
+          "gitter"
+        ]
+      ]
+    }
   }
 }

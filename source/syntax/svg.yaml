@@ -8,4 +8,4 @@ scope: source.svg
 contexts:
   main:
     - match: ""
-      push: "${paths.require}"
+      push: "${paths.external}"

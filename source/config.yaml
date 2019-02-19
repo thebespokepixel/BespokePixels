@@ -1,0 +1,243 @@
+%YAML 1.2
+---
+name: BespokePixels
+author: Mark Griffiths
+colorSpace: sRGB
+ui_style: dark
+
+paths:
+  root: Packages
+  package: /Theme - BespokePixels
+  settings: /settings
+  schemes: /schemes
+  syntax: /syntax
+  themes: /themes
+  media: /media
+
+extname:
+  editable: YAML-stTheme
+  theme: sublime-theme
+  scheme: stTheme
+  settings: sublime-settings
+  syntax: sublime-syntax
+
+syntax:
+  mark: (Bespoke)
+
+requires: ""
+
+types:
+  # Theme Parts
+  theme:
+    stem: BespokePixels
+    display: BespokePixels
+    uuid: a784782b-0dfa-4840-041e-77b65d674a0a
+  extname:
+    editable: YAML-tmTheme
+    scheme: tmTheme
+
+  widget:
+    stem: Widget - BespokePixels
+    display: Widget - BespokePixels
+    uuid: d81a7bd1-d013-4d95-0209-553f3ea2c2a4
+
+  # Generic Types
+
+  bower:
+    stem: Bower
+    display: Bower
+    requires: json
+    uuid: 7b58b79b-2525-4a64-9921-846e818d5bdf
+
+  css:
+    stem: CSS
+    display: CSS
+    provides: CSS/css
+    uuid: 018e32b7-63fb-47c3-b743-766d189df9e0
+
+  dockerfile:
+    stem: DockerFile
+    display: DockerFile
+    requires: shell
+    uuid: 2ac354b7-affd-473d-9eeb-4e59ef080514
+
+  font:
+    stem: font
+    display: font
+    uuid: aefdf0fb-e3c0-4db0-99b7-3981a642069b
+
+  git:
+    stem: Git
+    display: Git
+    requires: shell
+    uuid: 5113e1f4-b031-4441-8984-3f7efbbf3cf1
+
+  gruntfile-coffee:
+    stem: Gruntfile Coffee
+    display: Gruntfile Coffee
+    uuid: 97fcca82-0fde-4e36-8c7f-f42deccbfb57
+
+  gruntfile-js:
+    stem: Gruntfile JS
+    display: Gruntfile JS
+    requires: es
+    uuid: 49f118f7-bbe5-4fb3-a7d2-929102399694
+
+  gulpfile-coffee:
+    stem: Gulpfile Coffee
+    display: Gulpfile Coffee
+    uuid: 9e7b06a0-d68b-41d2-9bca-4b06cbc5a52e
+
+  gulpfile-js:
+    stem: Gulpfile JS
+    display: Gulpfile JS
+    requires: es
+    uuid: 10b69106-b9cd-496d-8df2-c0b037819fd9
+
+  handlebars:
+    stem: Handlebars
+    display: Handlebars
+    uuid: 8ee8018b-3ced-4785-adfe-53225771ab0f
+
+  html:
+    stem: HTML
+    display: HTML
+    uuid: fe9f2091-5627-4ea5-b1b9-65dfca4a3b15
+
+  es:
+    stem: Ecmascript
+    display: Ecmascript
+    provides: Ecmascript Syntax/ecmascript
+    uuid: 175f7453-3c64-4705-8d4d-f1797a418f27
+
+  json:
+    stem: JSON
+    display: JSON
+    provides: JSON
+    uuid: 175f7453-3c64-4705-8d4d-f1797a418f27
+
+  less:
+    stem: LESS
+    display: LESS
+    provides: LESS/less
+    uuid: 1d866bf6-c0a7-44b1-8d46-e81183b41e6f
+
+  license:
+    stem: License
+    display: License
+    uuid: f6be1272-41ad-4dd4-8652-0a9a95f0681d
+
+  markdown:
+    stem: Markdown
+    display: Markdown
+    uuid: e5e2d4e8-645a-4cf0-88a4-1ba2f1b1aa42
+
+  mustache:
+    stem: Mustache
+    display: Mustache
+    uuid: 380db628-6867-4947-9e6f-306ccba3f186
+
+  npm:
+    stem: npm
+    display: npm
+    requires: json
+    uuid: 7b8e23a8-5bf5-4339-83c3-a91d38a634d7
+
+  plist:
+    stem: plist
+    display: plist
+    requires: xml
+    uuid: 13eff717-8acf-4dd3-b568-90da5a469e2f
+
+  procfile:
+    stem: Procfile
+    display: Procfile
+    uuid: 92879eb1-1e09-4000-a850-83e8319be8a7
+
+  python:
+    stem: Python
+    display: Python
+    uuid: 3d24c002-9d07-4ec7-b0b9-4d6fdc89ea92
+
+  rails:
+    stem: Rails
+    display: Rails
+    provides: Rails/HTML (Rails)
+    uuid: b9239bf2-270d-4e25-a3ae-575f17d988a8
+
+  react:
+    stem: React
+    display: React JSX
+    requires: es
+    uuid: a4032fd0-1083-46c8-a1a4-8a436f6c9e9f
+
+  ruby:
+    stem: Ruby
+    display: Ruby
+    provides: Ruby/Ruby
+    uuid: b8061444-ab2a-40ad-b8f9-bd9a27759ce8
+
+  shell:
+    stem: Shell-Unix-Generic
+    display: Shell
+    provides: ShellScript/Shell-Unix-Generic
+    uuid: 0b3d94b6-dd5e-452c-b857-d68e7575b6f6
+
+  sublime-project:
+    stem: Sublime Project
+    display: Sublime Project
+    requires: json
+    uuid: 64b4f710-4f78-49b6-aa6e-0985e70fb7f7
+
+  sublime-scheme-plist:
+    stem: Sublime Scheme (plist)
+    display: Sublime Color Scheme
+    requires: plist
+    uuid: 89404e85-885a-4cc3-ada7-f825a201f103
+
+  sublime-scheme-yaml:
+    stem: Sublime Scheme (YAML)
+    display: Sublime Editable Color Scheme
+    requires: yaml
+    uuid: 01f6f5a4-75f0-4852-a253-e92bad6b3117
+
+  sublime-settings:
+    stem: Sublime Settings
+    display: Sublime Settings
+    requires: json
+    uuid: 5dc1800c-d073-4bff-9e2a-b5338c7a3d20
+
+  sublime-syntax:
+    stem: Sublime Syntax
+    display: Sublime Syntax
+    requires: yaml
+    uuid: c62287dd-b706-45ab-86be-f22235e37d1b
+
+  sublime-theme:
+    stem: Sublime Theme
+    display: Sublime Theme
+    requires: json
+    uuid: 34453e62-da67-4b67-b3b4-ad969aa5d6da
+
+  svg:
+    stem: SVG
+    display: SVG
+    requires: xml
+    uuid: 53737499-9c7e-4d7e-97c7-e2c3dc1e0c49
+
+  text:
+    stem: Plain text
+    display: Plain text
+    uuid: 5e265103-7914-417a-974f-3ba520a95b13
+
+  xml:
+    stem: XML
+    display: XML
+    provides: XML/XML
+    uuid: 6549b8c5-0fd8-4e02-9b7f-e3da69d3ea24
+
+  yaml:
+    stem: YAML
+    display: YAML
+    provides: YAML/YAML
+    uuid: 866107c6-6092-42b4-bc40-5bb441875836

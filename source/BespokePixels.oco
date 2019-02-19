@@ -1,0 +1,85 @@
+oct/:
+  defaultView: minimal
+main:
+  oct/:
+    view: cards
+    colorsPerRow: 3
+    backgroundColor: = flat.12
+  foreground: = flat.100
+  background: hsl(60, 30, 10)
+  shadow: = flat.8
+flat:
+  oct/:
+    view: Stack
+    backgroundColor: = main.background
+  100: hsl(60, 30, 100)
+  75: hsl(60, 30, 75)
+  50: hsl(60, 30, 50)
+  40: hsl(60, 30, 40)
+  30: hsl(60, 30, 30)
+  20: hsl(60, 30, 20)
+  15: hsl(60, 30, 15)
+  13: hsl(60, 30, 13)
+  12: hsl(60, 30, 12)
+  11: hsl(60, 30, 11)
+  8: hsl(60, 30, 8)
+standout:
+  oct/:
+    view: Stack
+    backgroundColor: = main.background
+  pop: hsl(40, 80, 70)
+  50: hsl(60, 50, 50)
+  45: hsl(60, 50, 45)
+  40: hsl(60, 50, 40)
+  35: hsl(60, 50, 35)
+  30: hsl(60, 50, 30)
+brackets:
+  oct/:
+    view: List
+    swatchShape: STRETCHED
+  tag: #7FFF7F
+  curly: #CCCC15
+  round: #15CC15
+  square: #CC15CC
+  angle: #15CCCC
+  quote: #7F7FFF
+  unmatched: #CC1515
+json:
+  oct/:
+    view: Fan
+  lvl9: rgb(154, 203, 145)
+  lvl8: rgb(140, 203, 151)
+  lvl7: rgb(136, 203, 170)
+  lvl6: rgb(133, 203, 191)
+  lvl5: rgb(127, 190, 203)
+  lvl4: rgb(124, 163, 203)
+  lvl3: rgb(121, 133, 203)
+  lvl2: rgb(132, 116, 203)
+  lvl1: rgb(158, 111, 203)
+edit:
+  selection: hsla(60, 30, 50, 0.7)
+  border: hsla(60, 30, 40, 0.85)
+npm:
+  ui_background: rgb(43, 11, 11)
+  json_lvl1: rgb(179, 56, 45)
+  json_lvl2: rgb(191, 68, 57)
+  json_lvl3: rgb(204, 82, 71)
+
+ui:
+  background: = main.background
+  background_soft: = flat.11
+  foreground: = main.foreground
+  foreground_soft: = flat.75
+  fields: rgb(221, 228, 208)
+  light_hint: rgb(193, 193, 174)
+  pop_plus2: rgb(128, 128, 65)
+  pop_plus: rgb(96, 96, 48)
+  pop: rgb(74, 74, 37)
+  background_plus2: rgb(78, 78, 54)
+  background_plus: rgb(52, 52, 36)
+  background_old: rgb(38, 38, 26)
+  background_neg: rgb(30, 30, 21)
+  background_neg2: rgb(25, 25, 18)
+  shadow: rgb(20, 20, 14)
+  shadow_fade: rgba(20, 20, 14, 0.5)
+

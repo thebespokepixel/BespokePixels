@@ -5,7 +5,7 @@
 	// Text input field item
 	{
 		"class": "text_line_control",
-		"layer0.tint": ${ui.fields.rgb},
+		"layer0.tint": ${palette.ui.fields.rgb},
 		"layer0.opacity": 1,
 		"tint_index": 1,
 		"content_margin": [4, 32, 4, 4]
@@ -15,7 +15,7 @@
 	{
 		"class": "text_line_control",
 		"parents": [{"class": "panel_control"}],
-		"layer0.tint": ${ui.fields.rgb},
+		"layer0.tint": ${palette.ui.fields.rgb},
 		"content_margin": [4, 3, 4, 3]
 	},
 		// Text input field item (panels)
@@ -36,7 +36,7 @@
 	{
 		"class": "text_line_control",
 		"parents": [{"class": "overlay_control"}],
-		"layer0.tint": ${ui.fields.rgb},
+		"layer0.tint": ${palette.ui.fields.rgb},
 		"content_margin": [4, 2, 4, 3]
 	},
 

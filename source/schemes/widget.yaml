@@ -1,26 +1,29 @@
+%YAML 1.2
+---
 #=include parts/header.yaml
+
 settings:
-- settings:
-    background: '${ui.fields.hex}'
-    caret: '#101010'
-    foreground: '${ui.shadow.hex}'
-    invisibles: '${ui.light_hint.hex}'
-    selection: '${edit.selection1.hex}'
-    selectionBorder: '${edit.border1.hex}'
-- name: Comment
-  scope: comment
-  settings:
-    foreground: '${ui.background_plus2.hex}'
-- name: Keyword
-  scope: keyword, storage
-  settings:
-    foreground: '#330033'
-- scope: constant
-  settings:
-    foreground: '#003300'
-- scope: string
-  settings:
-    foreground: '<% print(ui.shadow.fade(127)) %>'
-- scope: constant.character.escape
-  settings:
-    foreground: '#333366'
+  - settings:
+      background: '${palette.ui.fields.hex}'
+      caret: '#101010'
+      foreground: '${palette.ui.shadow.hex}'
+      invisibles: '${palette.ui.light_hint.hex}'
+      selection: '${palette.edit.selection.hex}'
+      selectionBorder: '${palette.edit.border.hex}'
+  - name: Comment
+    scope: comment
+    settings:
+      foreground: '${palette.ui.background_plus2.hex}'
+  - name: Keyword
+    scope: keyword, storage
+    settings:
+      foreground: '#330033'
+  - scope: constant
+    settings:
+      foreground: '#003300'
+  - scope: string
+    settings:
+      foreground: '${palette.ui.shadow_fade.hex}'
+  - scope: constant.character.escape
+    settings:
+      foreground: '#333366'
