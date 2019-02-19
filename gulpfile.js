@@ -13,32 +13,15 @@ const plist = require('plist')
 const through = require('through2')
 const $ = require('gulp-load-plugins')()
 const _ = require('lodash')
+
 const oco2Sublime = require('./lib/oco-to-sublime')
+const plistConverter = require('./lib/plist-converter')
 
 const config = yaml.safeLoad(readFileSync('source/config.yaml', 'utf8'))
 
 const uuid = a => a ?
 	((a ^	crypto.randomBytes(1)[0] % 16)	>> a / 4).toString(16) :
 	([1e7] +	-1e3 + -4e3 + -8e3 +	-1e11).replace(/[018]/g, uuid)
-
-
-const plistConverter = () => through.obj(function (file, enc, cb) {
-	if (file.isNull()) {
-		return cb(null, file)
-	}
-
-	if (file.isStream()) {
-		return cb(new PluginError('Theme compiler', 'Streaming not supported'))
-	}
-
-	try {
-		file.contents = new Buffer.from(plist.build(JSON.parse(file.contents)))
-		this.push(file)
-	} catch (err) {
-		this.emit('error', new PluginError('Theme compiler @plistConverter', err, {fileName: file.path}))
-	}
-	cb()
-})
 
 const setData = mode_ => through.obj(function (file, enc, cb) {
 	if (file.isNull()) {
