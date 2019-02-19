@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>name</key>
+    <string>BespokePixels-npm</string>
+    <key>uuid</key>
+    <string>7b8e23a8-5bf5-4339-83c3-a91d38a634d7</string>
+    <key>author</key>
+    <string>Mark Griffiths</string>
+    <key>semanticClass</key>
+    <string>BespokePixels.theme.npm.dark</string>
+    <key>colorSpaceName</key>
+    <string>sRGB</string>
+    <key>settings</key>
+    <array>
+      <dict>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#d2d2ac</string>
+          <key>background</key>
+          <string>#212112</string>
+          <key>gutter</key>
+          <string>#14140E</string>
+          <key>gutterForeground</key>
+          <string>#81815A</string>
+          <key>tagsOptions</key>
+          <string>stippled_underline</string>
+          <key>bracketsForeground</key>
+          <string>#CCCC15</string>
+          <key>bracketsOptions</key>
+          <string>underline</string>
+          <key>bracketContentsForeground</key>
+          <string>#15CC15</string>
+          <key>bracketContentsOptions</key>
+          <string>underline</string>
+          <key>caret</key>
+          <string>#FFFFEE</string>
+          <key>lineHighlight</key>
+          <string>#E0E29010</string>
+          <key>findHighlight</key>
+          <string>#CC9D1580</string>
+          <key>findHighlightForeground</key>
+          <string>#FFFFCC</string>
+          <key>guide</key>
+          <string>#4E4E36</string>
+          <key>activeGuide</key>
+          <string>#CC9D15CC</string>
+          <key>stackGuide</key>
+          <string>#CC15CC80</string>
+          <key>highlight</key>
+          <string>#9D15CCCC</string>
+          <key>highlightForeground</key>
+          <string>#FFCCFF</string>
+          <key>selection</key>
+          <string>#4A4A2580</string>
+          <key>selectionBorder</key>
+          <string>#99994D80</string>
+          <key>inactiveSelection</key>
+          <string>#60603040</string>
+          <key>invisibles</key>
+          <string>#4E4E36</string>
+          <key>popupCss</key>
+          <string>html { background-color: #343424; color: #FFFFB2; padding: 16px; } a { color: #808041; display: block; text-decoration: none; } .error, .deleted { color: #992F2F; } .success, .inserted { color: #2F992F; } .warning, .modified { color: #99992F; }</string>
+          <key>shadow</key>
+          <string>#101007</string>
+          <key>shadowWidth</key>
+          <string>30</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>JSON Key - Level 2</string>
+        <key>scope</key>
+        <string>source.json.npm meta meta meta meta.structure.dictionary.json string.quoted.double.json - meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#cc5247</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>NPM JSON Key - Level 1</string>
+        <key>scope</key>
+        <string>source.json.npm meta meta.structure.dictionary.json string.quoted.double.json - meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#bf4439</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>NPM JSON Key - Level 0</string>
+        <key>scope</key>
+        <string>source.json.npm meta.structure.dictionary.json string.quoted.double.json - meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#b3382d</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>SublimeLinter Error</string>
+        <key>scope</key>
+        <string>sublimelinter.mark.error</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#A20007</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>SublimeLinter Gutter Mark</string>
+        <key>scope</key>
+        <string>sublimelinter.gutter-mark</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#FFFFFF</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>SublimeLinter Warning</string>
+        <key>scope</key>
+        <string>sublimelinter.mark.warning</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#DDB700</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>SublimeLinter Annotation</string>
+        <key>scope</key>
+        <string>sublimelinter.annotations</string>
+        <key>settings</key>
+        <dict>
+          <key>background</key>
+          <string>#C17E70</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Bracket Tag</string>
+        <key>scope</key>
+        <string>brackethighlighter.tag</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#7fff7f</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Bracket Curly</string>
+        <key>scope</key>
+        <string>brackethighlighter.curly</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#cccc15</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Bracket Round</string>
+        <key>scope</key>
+        <string>brackethighlighter.round</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#15cc15</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Bracket Square</string>
+        <key>scope</key>
+        <string>brackethighlighter.square</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#cc15cc</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Bracket Angle</string>
+        <key>scope</key>
+        <string>brackethighlighter.angle</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#15cccc</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Bracket Quote</string>
+        <key>scope</key>
+        <string>brackethighlighter.quote</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#7f7fff</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Bracket Unmatched</string>
+        <key>scope</key>
+        <string>brackethighlighter.unmatched</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#cc1515</string>
+        </dict>
+      </dict>
+    </array>
+  </dict>
+</plist>

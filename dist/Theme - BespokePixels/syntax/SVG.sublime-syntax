@@ -1,0 +1,11 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/3/syntax.html
+name: SVG (Bespoke)
+file_extensions:
+  - svg
+scope: source.svg
+contexts:
+  main:
+    - match: ""
+      push: "Packages/undefined.sublime-syntax"

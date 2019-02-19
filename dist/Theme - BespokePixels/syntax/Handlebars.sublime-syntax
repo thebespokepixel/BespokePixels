@@ -1,0 +1,10 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/3/syntax.html
+name: Handlebars (Bespoke)
+file_extensions:
+  - hbs
+scope: text.html.handlebars
+contexts:
+  main:
+    - include: scope:text.html.basic

@@ -1,0 +1,13 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/3/syntax.html
+name: Sublime Project (Bespoke)
+file_extensions:
+  - sublime-project
+scope: source.json, source.sublime-project
+contexts:
+  main:
+    - match: ""
+      push: "Packages/Theme - BespokePixels/syntax/undefined.sublime-syntax"
+
+

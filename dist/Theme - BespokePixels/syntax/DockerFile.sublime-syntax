@@ -1,0 +1,11 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/3/syntax.html
+name: DockerFile (Bespoke)
+file_extensions:
+  - Dockerfile
+scope: source.shell, source.dockerfile
+contexts:
+  main:
+    - match: ""
+      push: "Packages/undefined.sublime-syntax"

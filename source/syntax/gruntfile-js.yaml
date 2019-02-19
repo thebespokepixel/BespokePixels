@@ -1,7 +1,7 @@
 %YAML 1.2
 ---
 # http://www.sublimetext.com/docs/3/syntax.html
-name: ${display_name}
+name: ${displayName}
 file_extensions:
   - gruntfile.js
   - gruntfile.babel.js

@@ -1,82 +1,19 @@
 /*
  *  BespokePixels Gulp File
  */
-const path = require('path')
-const {readFileSync} = require('fs')
-const crypto = require('crypto')
-
 const {paletteReader} = require('@thebespokepixel/palette2oco')
 const gulp = require('gulp')
-const PluginError = require('plugin-error')
-const yaml = require('js-yaml')
-const plist = require('plist')
-const through = require('through2')
+
 const $ = require('gulp-load-plugins')()
 const _ = require('lodash')
+const trash = require('trash')
 
 const oco2Sublime = require('./lib/oco-to-sublime')
 const plistConverter = require('./lib/plist-converter')
-
-const config = yaml.safeLoad(readFileSync('source/config.yaml', 'utf8'))
-
-const uuid = a => a ?
-	((a ^	crypto.randomBytes(1)[0] % 16)	>> a / 4).toString(16) :
-	([1e7] +	-1e3 + -4e3 + -8e3 +	-1e11).replace(/[018]/g, uuid)
-
-const setData = mode_ => through.obj(function (file, enc, cb) {
-	if (file.isNull()) {
-		return cb(null, file)
-	}
-
-	if (file.isStream()) {
-		return cb(new PluginError('Theme compiler', 'Streaming not supported'))
-	}
-
-	try {
-		file.extname = `.${file.data.extname[mode_]}`
-		file.stem = `${file.data.stem}`
-		this.push(file)
-	} catch (err) {
-		this.emit('error', new PluginError('Theme compiler @setData', err, {fileName: file.path}))
-	}
-	cb()
-})
-
-function setPaths (cfg) {
-	const paths = cfg.paths
-	const requireProvider = () => {
-		if (cfg.requires) {
-			return cfg.types[cfg.requires].provider
-		}
-		return 'none'
-	}
-
-	return {
-		paths: {
-			scheme: `${paths.root}${paths.package}${paths.schemes}/${cfg.stem}.${cfg.extname.scheme}`,
-			require: `${paths.root}${paths.package}${paths.syntax}/${requireProvider()}.${cfg.extname.syntax}`,
-			external: `${paths.root}/${requireProvider()}.${cfg.extname.syntax}`
-		},
-		display_name: `${cfg.display} ${cfg.syntax.mark}`
-	}
-}
-
-function setConfig(palette, type, ext) {
-	return function (file_) {
-		const basename = path.basename(file_.path, `.${ext}`)
-		console.info(`Compiling ${config.types[basename].stem} ${type}...`)
-
-		const jobConfig = {
-			basename,
-			uuid: uuid(),
-			palette: palette.BespokePixels,
-			...config,
-			...config.types[basename]
-		}
-
-		return _.merge(jobConfig, setPaths(jobConfig))
-	}
-}
+const uuid = require('./lib/uuid')
+const setData = require('./lib/set-data')
+const setPaths = require('./lib/set-paths')
+const setConfig = require('./lib/set-config')
 
 async function setPalette() {
 	return paletteReader('source')
@@ -86,47 +23,78 @@ async function setPalette() {
 
 gulp.task('compile:settings', async () => {
 	const palette = await setPalette()
-	return gulp.src(['source/settings/*.json'])
+	return gulp.src('source/settings/*.json')
 		.pipe($.include())
-		.pipe($.data(setConfig(palette, 'settings', 'json')))
+		.pipe($.data(setConfig(palette, 'Settings', 'json')))
 		.pipe($.template())
 		.pipe(setData('settings'))
-		.pipe(gulp.dest('./settingsNew'))
+		.pipe(gulp.dest('./dist/Theme - BespokePixels/settings'))
 })
 
 gulp.task('compile:syntax', async () => {
 	const palette = await setPalette()
 	return gulp.src(['source/syntax/*.yaml'])
 		.pipe($.include())
-		.pipe($.data(setConfig(palette, 'syntax', 'yaml')))
+		.pipe($.data(setConfig(palette, 'Syntax', 'yaml')))
 		.pipe($.template())
 		.pipe(setData('syntax'))
-		.pipe(gulp.dest('./syntaxNew'))
+		.pipe(gulp.dest('./dist/Theme - BespokePixels/syntax'))
 })
 
 gulp.task('compile:schemes', async () => {
 	const palette = await setPalette()
-	return gulp.src(['source/schemes/*.yaml'])
+	return gulp.src('source/schemes/*.yaml')
 		.pipe($.include())
-		.pipe($.data(setConfig(palette, 'schemes', 'yaml')))
+		.pipe($.data(setConfig(palette, 'Schemes', 'yaml')))
 		.pipe($.template())
 		.pipe(setData('editable'))
 		.pipe(gulp.dest('./schemesNew'))
 		.pipe($.yaml({space: 2}))
 		.pipe(plistConverter())
 		.pipe(setData('scheme'))
-		.pipe(gulp.dest('./schemesNew'))
+		.pipe(gulp.dest('./dist/Theme - BespokePixels/schemes'))
 })
 
 gulp.task('compile:theme', async () => {
 	const palette = await setPalette()
-	return gulp.src(['source/themes/*.json'])
+	return gulp.src('source/themes/*.json')
 		.pipe($.include())
-		.pipe($.data(setConfig(palette, 'theme', 'json')))
+		.pipe($.data(setConfig(palette, 'Theme', 'json')))
 		.pipe($.template())
 		.pipe(setData('theme'))
-		.pipe(gulp.dest('./themeNew'))
+		.pipe(gulp.dest('./dist/Theme - BespokePixels'))
 })
+
+gulp.task('compile:icons', () => gulp.src('source/icons/build/*')
+	.pipe(gulp.dest('./dist/Theme - BespokePixels/icons'))
+)
+
+gulp.task('compile:meta', () => gulp.src('source/meta/*')
+	.pipe(gulp.dest('./dist/Theme - BespokePixels/meta'))
+)
+
+gulp.task('compile:media', () => gulp.src('source/media/build/*')
+	.pipe(gulp.dest('./dist/Theme - BespokePixels/media'))
+)
+
+gulp.task('compile', gulp.parallel(
+	'compile:settings',
+	'compile:syntax',
+	'compile:schemes',
+	'compile:theme',
+	'compile:icons',
+	'compile:meta',
+	'compile:media'
+))
+
+gulp.task('clean', () => trash([
+	'./dist/Theme - BespokePixels'
+]))
+
+gulp.task('default', gulp.series(
+	'clean',
+	'compile',
+))
 
 // gulp.task('compile:settings', () => gulp.src(['source/settings/*.json'])
 // 	.pipe($.include())

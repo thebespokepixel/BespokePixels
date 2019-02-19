@@ -1,0 +1,14 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/3/syntax.html
+name: Sublime Color Scheme (Bespoke)
+file_extensions:
+  - tmTheme
+  - stTheme
+scope: source.plist, source.sublime-color-scheme
+contexts:
+  main:
+    - match: ""
+      syntax: "Packages/Theme - BespokePixels/syntax/undefined.sublime-syntax"
+
+

@@ -1,0 +1,11 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/3/syntax.html
+name: React JSX (Bespoke)
+file_extensions:
+  - jsx
+scope: source.js, source.jsx
+contexts:
+  main:
+    - match: ""
+      push: "Packages/undefined.sublime-syntax"

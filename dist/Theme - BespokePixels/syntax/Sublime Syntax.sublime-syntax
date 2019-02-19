@@ -1,0 +1,11 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/3/syntax.html
+name: Sublime Syntax (Bespoke)
+file_extensions:
+  - sublime-syntax
+scope: source.yaml, source.sublime-syntax
+contexts:
+  main:
+    - match: ""
+      push: "Packages/undefined.sublime-syntax"
