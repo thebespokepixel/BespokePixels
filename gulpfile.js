@@ -89,6 +89,5 @@ gulp.task('clean', () => trash([
 ]))
 
 gulp.task('default', gulp.series(
-	'clean',
 	'compile'
 ))

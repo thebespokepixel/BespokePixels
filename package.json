@@ -60,6 +60,7 @@
         [
           "status",
           "greenkeeper",
+          "travis",
           "david-dev",
           "gitter"
         ]

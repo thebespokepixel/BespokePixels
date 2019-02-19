@@ -4,10 +4,10 @@ main:
   oct/:
     view: cards
     colorsPerRow: 3
-    backgroundColor: = flat.13
+    backgroundColor: = flat.10
   foreground: = flat.100
-  background: = flat.13
-  shadow: = flat.8
+  background: = flat.10
+  shadow: = flat.5
 flat:
   oct/:
     view: Stack
@@ -19,10 +19,9 @@ flat:
   30: hsl(60, 30, 30)
   20: hsl(60, 30, 20)
   15: hsl(60, 30, 15)
-  13: hsl(60, 30, 13)
-  12: hsl(60, 30, 12)
-  11: hsl(60, 30, 11)
+  10: hsl(60, 30, 10)
   8: hsl(60, 30, 8)
+  5: hsl(60, 30, 5)
 standout:
   oct/:
     view: Stack
@@ -67,7 +66,7 @@ npm:
 
 ui:
   background: = main.background
-  background_soft: = flat.11
+  background_soft: = flat.8
   foreground: = main.foreground
   foreground_soft: = flat.75
   fields: rgb(221, 228, 208)
