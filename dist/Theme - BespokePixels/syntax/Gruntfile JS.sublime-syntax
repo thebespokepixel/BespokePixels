@@ -9,4 +9,4 @@ scope: source.js, source.gruntfile.js
 contexts:
   main:
     - match: ""
-      syntax: "Packages/undefined.sublime-syntax"
+      syntax: "Packages/Ecmascript Syntax/ecmascript.sublime-syntax"

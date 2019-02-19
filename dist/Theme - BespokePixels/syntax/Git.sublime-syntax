@@ -19,4 +19,4 @@ scope: source.shell, source.git
 contexts:
   main:
     - match: ""
-      syntax: "Packages/undefined.sublime-syntax"
+      syntax: "Packages/ShellScript/Shell-Unix-Generic.sublime-syntax"

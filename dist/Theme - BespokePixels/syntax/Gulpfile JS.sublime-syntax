@@ -9,4 +9,4 @@ scope: source.js, source.gulpfile.js
 contexts:
   main:
     - match: ""
-      push: "Packages/undefined.sublime-syntax"
+      push: "Packages/Ecmascript Syntax/ecmascript.sublime-syntax"

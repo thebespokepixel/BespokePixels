@@ -8,4 +8,4 @@ scope: source.svg
 contexts:
   main:
     - match: ""
-      push: "Packages/undefined.sublime-syntax"
+      push: "Packages/XML/XML.sublime-syntax"

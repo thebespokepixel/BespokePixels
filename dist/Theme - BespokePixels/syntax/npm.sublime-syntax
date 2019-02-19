@@ -9,4 +9,4 @@ scope: source.json, source.json.npm
 contexts:
   main:
     - match: ""
-      push: "Packages/Theme - BespokePixels/syntax/undefined.sublime-syntax"
+      push: "Packages/Theme - BespokePixels/syntax/JSON.sublime-syntax"

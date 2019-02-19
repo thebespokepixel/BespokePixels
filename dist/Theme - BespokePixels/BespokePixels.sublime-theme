@@ -5,7 +5,7 @@
 
     {
         "class": "sheet_container_control",
-        "layer0.tint": [33, 33, 18],
+        "layer0.tint": [43, 43, 23],
         "layer0.opacity": 1
     },
 
@@ -37,7 +37,7 @@
 
     {
       "class": "progress_bar_control",
-      "layer0.tint": [33, 33, 18],
+      "layer0.tint": [43, 43, 23],
       "layer0.opacity": 1.0
     },
 

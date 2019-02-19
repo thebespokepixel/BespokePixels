@@ -4,9 +4,9 @@ main:
   oct/:
     view: cards
     colorsPerRow: 3
-    backgroundColor: = flat.12
+    backgroundColor: = flat.13
   foreground: = flat.100
-  background: hsl(60, 30, 10)
+  background: = flat.13
   shadow: = flat.8
 flat:
   oct/:

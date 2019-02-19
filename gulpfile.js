@@ -45,7 +45,7 @@ gulp.task('compile:schemes', async () => {
 		.pipe($.data(setConfig(palette, 'Schemes', 'yaml')))
 		.pipe($.template())
 		.pipe(setData('editable'))
-		.pipe(gulp.dest('./schemesNew'))
+		.pipe(gulp.dest('./dist/Theme - BespokePixels/schemes'))
 		.pipe($.yaml({space: 2}))
 		.pipe(plistConverter())
 		.pipe(setData('scheme'))
@@ -90,5 +90,5 @@ gulp.task('clean', () => trash([
 
 gulp.task('default', gulp.series(
 	'clean',
-	'compile',
+	'compile'
 ))

@@ -32,9 +32,9 @@ types:
     stem: BespokePixels
     display: BespokePixels
     uuid: a784782b-0dfa-4840-041e-77b65d674a0a
-  extname:
-    editable: YAML-tmTheme
-    scheme: tmTheme
+    extname:
+      editable: YAML-tmTheme
+      scheme: tmTheme
 
   widget:
     stem: Widget - BespokePixels

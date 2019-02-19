@@ -8,4 +8,4 @@ scope: source.yaml, source.sublime-syntax
 contexts:
   main:
     - match: ""
-      push: "Packages/undefined.sublime-syntax"
+      push: "Packages/YAML/YAML.sublime-syntax"

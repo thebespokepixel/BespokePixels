@@ -8,4 +8,4 @@ scope: source.shell, source.dockerfile
 contexts:
   main:
     - match: ""
-      push: "Packages/undefined.sublime-syntax"
+      push: "Packages/ShellScript/Shell-Unix-Generic.sublime-syntax"
