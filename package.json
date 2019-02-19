@@ -18,7 +18,7 @@
     "@thebespokepixel/badges": "^1.0.2",
     "@thebespokepixel/oco-colorvalue-ex": "^1.0.0",
     "@thebespokepixel/palette2oco": "^1.0.1",
-    "@thebespokepixel/string": "^0.4.0",
+    "@thebespokepixel/string": "^0.5.4",
     "gulp": "4.0.0",
     "gulp-data": "^1.2.1",
     "gulp-include": "^2.3.0",
