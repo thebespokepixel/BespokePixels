@@ -1,0 +1,34 @@
+%YAML 1.2
+---
+name: BespokePixels-widget
+uuid: d81a7bd1-d013-4d95-0209-553f3ea2c2a4
+author: Mark Griffiths
+semanticClass: "BespokePixels.theme.widget.dark"
+colorSpaceName: sRGB
+
+
+settings:
+  - settings:
+      background: '#dde4d0'
+      caret: '#101010'
+      foreground: '#14140e'
+      invisibles: '#c1c1ae'
+      selection: '#a6a659b3'
+      selectionBorder: '#858547d9'
+  - name: Comment
+    scope: comment
+    settings:
+      foreground: '#4e4e36'
+  - name: Keyword
+    scope: keyword, storage
+    settings:
+      foreground: '#330033'
+  - scope: constant
+    settings:
+      foreground: '#003300'
+  - scope: string
+    settings:
+      foreground: '#14140e80'
+  - scope: constant.character.escape
+    settings:
+      foreground: '#333366'

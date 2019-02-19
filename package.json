@@ -39,7 +39,11 @@
     "xo": "^0.24.0"
   },
   "xo": {
-    "semicolon": false
+    "semicolon": false,
+    "ignores": [
+      "test/fixtures/**",
+      "dist/**"
+    ]
   },
   "badges": {
     "github": "MarkGriffiths",
