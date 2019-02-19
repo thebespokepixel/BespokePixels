@@ -5,7 +5,7 @@
   "main": "gulpfile.js",
   "repository": "https://MarkGriffiths@github.com/MarkGriffiths/BespokePixels.git",
   "scripts": {
-    "test": "xo && ava",
+    "test": "xo && gulp && nyc ava",
     "readme": "compile-readme -u source/docs/example.md source/docs/readme.md > readme.md"
   },
   "keywords": [
@@ -19,6 +19,7 @@
     "@thebespokepixel/oco-colorvalue-ex": "^1.0.0",
     "@thebespokepixel/palette2oco": "^1.0.1",
     "@thebespokepixel/string": "^0.5.4",
+    "ava": "^1.2.1",
     "gulp": "4.0.0",
     "gulp-data": "^1.2.1",
     "gulp-include": "^2.3.0",
@@ -28,6 +29,7 @@
     "gulp-yaml": "^2.0.3",
     "js-yaml": "^3.6.1",
     "lodash": "^4.13.1",
+    "nyc": "^13.3.0",
     "opencolor": "^0.2.0",
     "plist": "^3.0.1",
     "plugin-error": "^1.0.1",
