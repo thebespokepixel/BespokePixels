@@ -6,13 +6,13 @@ author: Mark Griffiths
 semanticClass: "BespokePixels.theme.npm.dark"
 colorSpaceName: sRGB
 
+
 settings:
   - settings:
-      foreground: '#d2d2ac'
-      background: '#212112'
-
-      gutter: '#14140E'
-      gutterForeground: '#81815A'
+      foreground: '#ccccb3'
+      background: '#2d0606'
+      gutter: '#181810'
+      gutterForeground: '#999966'
 
       tagsOptions: stippled_underline
       bracketsForeground: '#CCCC15'
@@ -20,11 +20,17 @@ settings:
       bracketContentsForeground: '#15CC15'
       bracketContentsOptions: underline
 
-      caret: '#FFFFEE'
-      lineHighlight: '#E0E29010'
+      caret: '#ffffff'
+      lineHighlight: '#4d4d1933'
 
-      findHighlight: '#CC9D1580'
-      findHighlightForeground: '#FFFFCC'
+      findHighlight: '#999933b3'
+      findHighlightForeground: '#ffffff'
+
+      selection: '#99993333'
+      selectionBorder: '#999933b3'
+      inactiveSelection: '#73732633'
+
+      invisibles: '#ffaa00b3'
 
       guide: '#4E4E36'
       activeGuide: '#CC9D15CC'
@@ -32,12 +38,6 @@ settings:
 
       highlight: '#9D15CCCC'
       highlightForeground: '#FFCCFF'
-
-      selection: '#4A4A2580'
-      selectionBorder: '#99994D80'
-      inactiveSelection: '#60603040'
-
-      invisibles: '#4E4E36'
 
       popupCss: "html {
         background-color: #343424;
@@ -59,7 +59,7 @@ settings:
         color: #99992F;
       }"
 
-      shadow: '#101007'
+      shadow: '#181810'
       shadowWidth: '30'
 
 
@@ -75,7 +75,7 @@ settings:
       meta.structure.dictionary.value.json
       string.quoted.double.json
     settings:
-      foreground: '#cc5247'
+      foreground: '#db6d57'
 
   - name: NPM JSON Key - Level 1
     scope: >-
@@ -87,7 +87,7 @@ settings:
       meta.structure.dictionary.value.json
       string.quoted.double.json
     settings:
-      foreground: '#bf4439'
+      foreground: '#dd493c'
 
   - name: NPM JSON Key - Level 0
     scope: >-
@@ -98,9 +98,9 @@ settings:
       meta.structure.dictionary.value.json
       string.quoted.double.json
     settings:
-      foreground: '#b3382d'
+      foreground: '#df2020'
 
-  # Sublime Linter ###############################################################
+  # Sublime Linter #############################################################
   - name: SublimeLinter Error
     scope: sublimelinter.mark.error
     settings:
@@ -118,7 +118,7 @@ settings:
     settings:
       background: '#C17E70'
 
-  # Bracket Highlighter ##########################################################
+  # Bracket Highlighter ########################################################
   - name: Bracket Tag
     scope: brackethighlighter.tag
     settings:

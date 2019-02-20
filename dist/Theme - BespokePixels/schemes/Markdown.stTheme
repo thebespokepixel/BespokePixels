@@ -17,28 +17,28 @@
       <dict>
         <key>settings</key>
         <dict>
-          <key>background</key>
-          <string>#191919</string>
-          <key>caret</key>
-          <string>#00bbff</string>
-          <key>findHighlight</key>
-          <string>#CC9D1580</string>
-          <key>findHighlightForeground</key>
-          <string>#FFFFCC</string>
           <key>foreground</key>
-          <string>#F8F8DF</string>
-          <key>inactiveSelection</key>
-          <string>#60603040</string>
-          <key>invisibles</key>
-          <string>#1f1f1f</string>
+          <string>#f8f8f7</string>
+          <key>background</key>
+          <string>#1a1a1a</string>
           <key>lineHighlight</key>
-          <string>#E0E29010</string>
+          <string>#4d4d1933</string>
+          <key>findHighlight</key>
+          <string>#999933b3</string>
+          <key>findHighlightForeground</key>
+          <string>#ffffff</string>
+          <key>inactiveSelection</key>
+          <string>#73732633</string>
+          <key>caret</key>
+          <string>#ffffff</string>
+          <key>invisibles</key>
+          <string>#ffaa00b3</string>
           <key>selection</key>
-          <string>#4A4A2580</string>
+          <string>#99993333</string>
           <key>selectionBorder</key>
-          <string>#99994D80</string>
+          <string>#999933b3</string>
           <key>shadow</key>
-          <string>#101007</string>
+          <string>#181810</string>
           <key>shadowWidth</key>
           <string>30</string>
         </dict>

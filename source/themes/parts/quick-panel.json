@@ -1,0 +1,45 @@
+/* ─────────────────────────────────────────────────────────────────────────///╮
+ *  Quick Panel                                                                │
+ *///──────────────────────────────────────────────────────────────────────────╯
+
+	{
+		"class": "quick_panel",
+		"row_padding": [8, 5, 8, 4],
+		"layer0.tint": [25, 25, 18],
+		"layer0.opacity": 1
+	},
+	{
+		"class": "quick_panel_row",
+		"layer0.tint": [30, 30, 21],
+		"layer0.opacity": 1,
+		"layer1.tint": [74, 74, 37, 128],
+		"layer1.opacity": { "target": 0.0, "speed": 2.0, "interpolation": "smoothstep" },
+		"layer2.tint": [20, 20, 18],
+		"layer2.inner_margin": [0, 0, 0, 1],
+		"layer2.draw_center": false,
+		"layer2.opacity": 1
+	},
+	{
+		"class": "quick_panel_row",
+		"attributes": ["selected"],
+		"layer1.opacity": 1
+	},
+	{
+		"class": "quick_panel_label",
+		"fg": [176, 176, 159],
+		"match_fg": [204, 204, 142],
+		"selected_fg": [204, 204, 142],
+		"selected_match_fg": [255, 255, 178]
+	},
+	{
+		"class": "quick_panel_path_label",
+		"fg": [127, 127, 114], // 03
+		"match_fg": [128, 128, 65], // 04
+		"selected_fg": [176, 176, 159], // 03
+		"selected_match_fg": [204, 204, 103] // 04
+	},
+	{
+		"class": "quick_panel_score_label",
+		"fg": [127, 127, 114], // 03
+		"selected_fg": [176, 176, 159] // 03
+	},

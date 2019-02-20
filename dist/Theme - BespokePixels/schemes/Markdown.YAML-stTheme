@@ -9,17 +9,17 @@ colorSpaceName: sRGB
 
 settings:
   - settings:
-      background: '#191919'
-      caret: '#00bbff'
-      findHighlight: '#CC9D1580'
-      findHighlightForeground: '#FFFFCC'
-      foreground: '#F8F8DF'
-      inactiveSelection: '#60603040'
-      invisibles: '#1f1f1f'
-      lineHighlight: '#E0E29010'
-      selection: '#4A4A2580'
-      selectionBorder: '#99994D80'
-      shadow: '#101007'
+      foreground: '#f8f8f7'
+      background: '#1a1a1a'
+      lineHighlight: '#4d4d1933'
+      findHighlight: '#999933b3'
+      findHighlightForeground: '#ffffff'
+      inactiveSelection: '#73732633'
+      caret: '#ffffff'
+      invisibles: '#ffaa00b3'
+      selection: '#99993333'
+      selectionBorder: '#999933b3'
+      shadow: '#181810'
       shadowWidth: '30'
 
   - name: Comments

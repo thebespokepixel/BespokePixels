@@ -6,13 +6,13 @@ author: Mark Griffiths
 semanticClass: "BespokePixels.theme.dark"
 colorSpaceName: sRGB
 
+
 settings:
   - settings:
-      foreground: '#d2d2ac'
-      background: '#212112'
-
-      gutter: '#14140E'
-      gutterForeground: '#81815A'
+      foreground: '#ccccb3'
+      background: '#1f1f14'
+      gutter: '#181810'
+      gutterForeground: '#999966'
 
       tagsOptions: stippled_underline
       bracketsForeground: '#CCCC15'
@@ -20,11 +20,17 @@ settings:
       bracketContentsForeground: '#15CC15'
       bracketContentsOptions: underline
 
-      caret: '#FFFFEE'
-      lineHighlight: '#E0E29010'
+      caret: '#ffffff'
+      lineHighlight: '#4d4d1933'
 
-      findHighlight: '#CC9D1580'
-      findHighlightForeground: '#FFFFCC'
+      findHighlight: '#999933b3'
+      findHighlightForeground: '#ffffff'
+
+      selection: '#99993333'
+      selectionBorder: '#999933b3'
+      inactiveSelection: '#73732633'
+
+      invisibles: '#ffaa00b3'
 
       guide: '#4E4E36'
       activeGuide: '#CC9D15CC'
@@ -32,12 +38,6 @@ settings:
 
       highlight: '#9D15CCCC'
       highlightForeground: '#FFCCFF'
-
-      selection: '#4A4A2580'
-      selectionBorder: '#99994D80'
-      inactiveSelection: '#60603040'
-
-      invisibles: '#4E4E36'
 
       popupCss: "html {
         background-color: #343424;
@@ -59,7 +59,7 @@ settings:
         color: #99992F;
       }"
 
-      shadow: '#101007'
+      shadow: '#181810'
       shadowWidth: '30'
 
 
@@ -760,7 +760,7 @@ settings:
       meta.group.capturing.regexp
       meta.group.capturing.regexp
     settings:
-      background: '#7BB664 89'
+      background: '#7BB66489'
 
   - name: Regex Outer Punc
     scope: punctuation.definition.string.regexp
@@ -938,7 +938,7 @@ settings:
     settings:
       foreground: '#E6DB74'
 
-  # Sublime Linter ###############################################################
+  # Sublime Linter #############################################################
   - name: SublimeLinter Error
     scope: sublimelinter.mark.error
     settings:
@@ -956,7 +956,7 @@ settings:
     settings:
       background: '#C17E70'
 
-  # Bracket Highlighter ##########################################################
+  # Bracket Highlighter ########################################################
   - name: Bracket Tag
     scope: brackethighlighter.tag
     settings:

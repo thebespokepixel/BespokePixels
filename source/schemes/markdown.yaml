@@ -4,17 +4,17 @@
 
 settings:
   - settings:
-      background: '#191919'
-      caret: '#00bbff'
-      findHighlight: '#CC9D1580'
-      findHighlightForeground: '#FFFFCC'
-      foreground: '#F8F8DF'
-      inactiveSelection: '#60603040'
-      invisibles: '#1f1f1f'
-      lineHighlight: '#E0E29010'
-      selection: '#4A4A2580'
-      selectionBorder: '#99994D80'
-      shadow: '#101007'
+      foreground: '<%= palette.markdown.foreground.hex %>'
+      background: '<%= palette.markdown.background.hex %>'
+      lineHighlight: '${palette.markdown.lineHighlight.hex}'
+      findHighlight: '${palette.markdown.findHighlight.hex}'
+      findHighlightForeground: '${palette.markdown.findHighlightForeground.hex}'
+      inactiveSelection: '${palette.markdown.inactiveSelection.hex}'
+      caret: '${palette.markdown.caret.hex}'
+      invisibles: '${palette.markdown.invisibles.hex}'
+      selection: '${palette.markdown.selection.hex}'
+      selectionBorder: '${palette.markdown.selectionBorder.hex}'
+      shadow: '${palette.ui.shadow.hex}'
       shadowWidth: '30'
 
   - name: Comments

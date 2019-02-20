@@ -1,0 +1,84 @@
+/* ─────────────────────────────────────────────────────────────────────────///╮
+ *  Standard Scrollbars                                                        │
+ *///──────────────────────────────────────────────────────────────────────────╯
+
+	// Standard scroll bar
+	{
+		"class": "scroll_bar_control",
+		"layer0.texture": "",
+		"layer0.tint": [38, 38, 26],
+		"layer0.opacity": 1,
+		"blur": false
+	},
+
+	// Standard scroll bar corner
+	{
+		"class": "scroll_corner_control",
+		"layer0.tint": [38, 38, 26],
+		"layer0.opacity": 1
+	},
+
+	// Standard scroll puck
+	{
+		"class": "puck_control",
+		"layer0.tint": [74, 74, 37],
+		"layer0.opacity": 0.6,
+		"content_margin": [5, 0],
+		"blur": false
+	},
+
+	// Standard horizontal scroll puck
+	{
+		"class": "puck_control",
+		"attributes": ["horizontal"],
+		"content_margin": [0, 5]
+	},
+
+/* ─────────────────────────────────────────────────────────────────────────///╮
+ *  Overlay Scrollbars                                                         │
+ *///──────────────────────────────────────────────────────────────────────────╯
+
+	// Overlay toggle scroll bar
+	{
+		"class": "scroll_area_control",
+		"settings": ["overlay_scroll_bars"],
+		"overlay": true
+	},
+	{
+		"class": "scroll_area_control",
+		"settings": ["!overlay_scroll_bars"],
+		"overlay": false
+	},
+
+	// Overlay scroll bar
+	{
+		"class": "scroll_bar_control",
+		"settings": ["overlay_scroll_bars"],
+		"layer0.opacity": 0.6,
+		"blur": true
+	},
+
+	// Overlay vertical puck
+	{
+		"class": "puck_control",
+		"settings": ["overlay_scroll_bars"],
+		"content_margin": [3, 0],
+		"blur": true
+	},
+
+	// Overlay horizontal puck
+	{
+		"class": "puck_control",
+		"settings": ["overlay_scroll_bars"],
+		"attributes": ["horizontal"],
+		"content_margin": [0, 3],
+		"blur": true
+	},
+
+	// Overlay light puck (for dark content)
+	{
+		"class": "puck_control",
+		"settings": ["overlay_scroll_bars"],
+		"attributes": ["dark"],
+		"layer0.tint": [128, 128, 65]
+	},

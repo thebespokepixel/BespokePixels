@@ -1,10 +1,5 @@
-settings:
-  - settings:
-      foreground: '<%= palette.ui.foreground_soft.hex %>'
-      background: '<%= palette.ui.background.hex %>'
-
-      gutter: '#14140E'
-      gutterForeground: '#81815A'
+      gutter: '${palette.ui.gutter.hex}'
+      gutterForeground: '${palette.ui.gutterForeground.hex}'
 
       tagsOptions: stippled_underline
       bracketsForeground: '#CCCC15'
@@ -12,11 +7,17 @@ settings:
       bracketContentsForeground: '#15CC15'
       bracketContentsOptions: underline
 
-      caret: '#FFFFEE'
-      lineHighlight: '#E0E29010'
+      caret: '${palette.edit.caret.hex}'
+      lineHighlight: '${palette.edit.lineHighlight.hex}'
 
-      findHighlight: '#CC9D1580'
-      findHighlightForeground: '#FFFFCC'
+      findHighlight: '${palette.edit.findHighlight.hex}'
+      findHighlightForeground: '${palette.edit.findHighlightForeground.hex}'
+
+      selection: '${palette.edit.selection.hex}'
+      selectionBorder: '${palette.edit.selectionBorder.hex}'
+      inactiveSelection: '${palette.edit.inactiveSelection.hex}'
+
+      invisibles: '${palette.edit.invisibles.hex}'
 
       guide: '#4E4E36'
       activeGuide: '#CC9D15CC'
@@ -24,12 +25,6 @@ settings:
 
       highlight: '#9D15CCCC'
       highlightForeground: '#FFCCFF'
-
-      selection: '#4A4A2580'
-      selectionBorder: '#99994D80'
-      inactiveSelection: '#60603040'
-
-      invisibles: '#4E4E36'
 
       popupCss: "html {
         background-color: #343424;
@@ -51,6 +46,6 @@ settings:
         color: #99992F;
       }"
 
-      shadow: '#101007'
+      shadow: '${palette.ui.shadow.hex}'
       shadowWidth: '30'
 

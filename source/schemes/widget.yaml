@@ -4,26 +4,27 @@
 
 settings:
   - settings:
-      background: '${palette.ui.fields.hex}'
-      caret: '#101010'
-      foreground: '${palette.ui.shadow.hex}'
-      invisibles: '${palette.ui.light_hint.hex}'
-      selection: '${palette.edit.selection.hex}'
-      selectionBorder: '${palette.edit.border.hex}'
+      foreground: '${palette.widget.foreground.hex}'
+      background: '${palette.widget.background.hex}'
+      caret: '${palette.widget.caret.hex}'
+      invisibles: '${palette.widget.invisibles.hex}'
+      selection: '${palette.widget.selection.hex}'
+      selectionBorder: '${palette.widget.selectionBorder.hex}'
+
   - name: Comment
     scope: comment
     settings:
-      foreground: '${palette.ui.background_plus2.hex}'
+      foreground: '${palette.widget.comment.hex}'
   - name: Keyword
     scope: keyword, storage
     settings:
-      foreground: '#330033'
+      foreground: '${palette.widget.keyword.hex}'
   - scope: constant
     settings:
-      foreground: '#003300'
+      foreground: '${palette.widget.constant.hex}'
   - scope: string
     settings:
-      foreground: '${palette.ui.shadow_fade.hex}'
+      foreground: '${palette.widget.string.hex}'
   - scope: constant.character.escape
     settings:
-      foreground: '#333366'
+      foreground: '${palette.widget.escape.hex}'

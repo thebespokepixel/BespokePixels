@@ -1,4 +1,4 @@
-  # Sublime Linter ###############################################################
+  # Sublime Linter #############################################################
   - name: SublimeLinter Error
     scope: sublimelinter.mark.error
     settings:

@@ -1,0 +1,51 @@
+/* ─────────────────────────────────────────────────────────────────────────///╮
+ *  Panels                                                                     │
+ *///──────────────────────────────────────────────────────────────────────────╯
+
+	// Bottom panel background
+	{
+		"class": "panel_control",
+		"layer0.opacity": 1,
+		"layer0.tint": [38, 38, 26],
+		"content_margin": [0, 0, 0, 0]
+	},
+	{
+		"class": "panel_close_button",
+		"layer0.texture": "Theme - BespokePixels/media/close.png",
+		"layer0.tint": [153, 153, 77],
+		"layer0.opacity": 1,
+		"layer1.texture": "Theme - BespokePixels/media/close.png",
+		"layer1.opacity": 0.0,
+		"layer1.tint": [255, 255, 128],
+		"content_margin": [8, 8] // 8,8 to show
+	},
+	{
+	"class": "panel_close_button",
+		"attributes": ["hover"],
+		"layer0.opacity": 0.0,
+		"layer1.opacity": 1.0
+	},
+	// Command panel
+	{
+		"class": "overlay_control",
+		"layer0.opacity": 1,
+		"layer1.tint": [20, 20, 14],
+		"layer1.opacity": 1,
+		"content_margin": [2, 2, 2, 2]
+	},
+	{
+		"class": "mini_quick_panel_row",
+		"layer0.tint": [25, 25, 18],
+		"layer0.opacity": 1,
+		"layer1.tint": [74, 74, 37, 128],
+		"layer1.opacity": { "target": 0.0, "speed": 2.0, "interpolation": "smoothstep" },
+		"layer2.tint": [20, 20, 14],
+		"layer2.opacity": 1,
+		"layer2.inner_margin": [0, 0, 0, 1],
+		"layer2.draw_center": false
+	},
+	{
+		"class": "mini_quick_panel_row",
+		"attributes": ["selected"],
+		"layer1.opacity": 1
+	},

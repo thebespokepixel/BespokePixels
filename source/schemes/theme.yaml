@@ -1,7 +1,12 @@
 %YAML 1.2
 ---
 #=include parts/header.yaml
-#=include parts/main.yaml
+
+settings:
+  - settings:
+      foreground: '<%= palette.ui.foreground.hex %>'
+      background: '<%= palette.ui.background.hex %>'
+#=include parts/shared-settings.yaml
 
   # GENERIC TMLANGUAGE BASE SCOPES #############################################
 
@@ -699,7 +704,7 @@
       meta.group.capturing.regexp
       meta.group.capturing.regexp
     settings:
-      background: '#7BB664 89'
+      background: '#7BB66489'
 
   - name: Regex Outer Punc
     scope: punctuation.definition.string.regexp

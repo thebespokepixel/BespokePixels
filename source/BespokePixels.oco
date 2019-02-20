@@ -1,41 +1,67 @@
 oct/:
   defaultView: minimal
+  identityColorTop: =main.foreground
+  identityColorSide:  =flat.30
+  identityColorBottom: =main.background
 main:
   oct/:
     view: cards
     colorsPerRow: 3
-    backgroundColor: = flat.10
-  foreground: = flat.100
+    backgroundColor: = main.background
+  foreground: = flat.75
   background: = flat.10
-  shadow: = flat.5
+  shadow: = flat.8
 flat:
   oct/:
     view: Stack
     backgroundColor: = main.background
-  100: hsl(60, 30, 100)
-  75: hsl(60, 30, 75)
-  50: hsl(60, 30, 50)
-  40: hsl(60, 30, 40)
-  30: hsl(60, 30, 30)
-  20: hsl(60, 30, 20)
-  15: hsl(60, 30, 15)
-  10: hsl(60, 30, 10)
-  8: hsl(60, 30, 8)
-  5: hsl(60, 30, 5)
+  100: hsl(60, 20, 100)
+  75: hsl(60, 20, 75)
+  50: hsl(60, 20, 50)
+  40: hsl(60, 20, 40)
+  30: hsl(60, 20, 30)
+  20: hsl(60, 20, 20)
+  15: hsl(60, 20, 15)
+  10: hsl(60, 20, 10)
+  8: hsl(60, 20, 8)
+  5: hsl(60, 20, 5)
 standout:
   oct/:
-    view: Stack
+    view: Fan
     backgroundColor: = main.background
-  pop: hsl(40, 80, 70)
+  pop: hsl(40, 100, 50)
+  60: hsl(60, 50, 60)
   50: hsl(60, 50, 50)
   45: hsl(60, 50, 45)
   40: hsl(60, 50, 40)
   35: hsl(60, 50, 35)
   30: hsl(60, 50, 30)
+standout-tint-high:
+  oct/:
+    view: Fan
+    backgroundColor: = main.background
+  pop: hsla(40, 100, 50, 0.7)
+  50: hsla(60, 50, 50, 0.7)
+  45: hsla(60, 50, 45, 0.7)
+  40: hsla(60, 50, 40, 0.7)
+  35: hsla(60, 50, 35, 0.7)
+  30: hsla(60, 50, 30, 0.7)
+  20: hsla(60, 50, 20, 0.7)
+standout-tint-low:
+  oct/:
+    view: Fan
+    backgroundColor: = main.background
+  pop: hsla(40, 100, 50, 0.2)
+  50: hsla(60, 50, 50, 0.2)
+  45: hsla(60, 50, 45, 0.2)
+  40: hsla(60, 50, 40, 0.2)
+  35: hsla(60, 50, 35, 0.2)
+  30: hsla(60, 50, 30, 0.2)
+  20: hsla(60, 50, 20, 0.2)
 brackets:
   oct/:
-    view: List
-    swatchShape: STRETCHED
+    view: Fan
+    backgroundColor: = main.background
   tag: #7FFF7F
   curly: #CCCC15
   round: #15CC15
@@ -46,39 +72,83 @@ brackets:
 json:
   oct/:
     view: Fan
-  lvl9: rgb(154, 203, 145)
-  lvl8: rgb(140, 203, 151)
-  lvl7: rgb(136, 203, 170)
-  lvl6: rgb(133, 203, 191)
+    backgroundColor: = main.background
+  lvl1: rgb(154, 203, 145)
+  lvl2: rgb(140, 203, 151)
+  lvl3: rgb(136, 203, 170)
+  lvl4: rgb(133, 203, 191)
   lvl5: rgb(127, 190, 203)
-  lvl4: rgb(124, 163, 203)
-  lvl3: rgb(121, 133, 203)
-  lvl2: rgb(132, 116, 203)
-  lvl1: rgb(158, 111, 203)
-edit:
-  selection: hsla(60, 30, 50, 0.7)
-  border: hsla(60, 30, 40, 0.85)
+  lvl6: rgb(124, 163, 203)
+  lvl7: rgb(121, 133, 203)
+  lvl8: rgb(132, 116, 203)
+  lvl9: rgb(158, 111, 203)
 npm:
-  ui_background: rgb(43, 11, 11)
-  json_lvl1: rgb(179, 56, 45)
-  json_lvl2: rgb(191, 68, 57)
-  json_lvl3: rgb(204, 82, 71)
-
-ui:
-  background: = main.background
-  background_soft: = flat.8
+  oct/backgroundColor: = npm.background
+  background: hsl(0, 75, 10)
   foreground: = main.foreground
-  foreground_soft: = flat.75
+  json_lvl1: hsl(0, 75, 50)
+  json_lvl2: hsl(5, 70, 55)
+  json_lvl3: hsl(10, 65, 60)
+ui:
+  oct/backgroundColor: = ui.background
+  background: = main.background
+  foreground: = main.foreground
+  gutter: = main.shadow
+  gutterForeground: = flat.50
+  shadow: = main.shadow
+  shadow_fade: hsla(60, 30, 8, 0.5)
   fields: rgb(221, 228, 208)
-  light_hint: rgb(193, 193, 174)
-  pop_plus2: rgb(128, 128, 65)
-  pop_plus: rgb(96, 96, 48)
-  pop: rgb(74, 74, 37)
-  background_plus2: rgb(78, 78, 54)
-  background_plus: rgb(52, 52, 36)
-  background_old: rgb(38, 38, 26)
-  background_neg: rgb(30, 30, 21)
-  background_neg2: rgb(25, 25, 18)
-  shadow: rgb(20, 20, 14)
-  shadow_fade: rgba(20, 20, 14, 0.5)
+  sheet_container_control: = main.background
+  grid_layout_control: = flat.50
+  progress_gauge_control: = standout.50
+  dialog: = flat.30
+  progress_bar_control: = main.background
+  bottom_panel_icon_default: = standout.60
+  bottom_panel_icon_rollover: = standout.pop
+  bottom_panel_icon_regex: hsv(300, 90, 80)
+  bottom_panel_icon_casesens: hsv(0, 90, 80)
+  bottom_panel_icon_wholeword: hsv(0, 90, 80)
+  bottom_panel_icon_context: hsv(120, 90, 80)
+  bottom_panel_icon_buffer: hsv(120, 90, 80)
+  bottom_panel_icon_reverse: hsv(300, 90, 80)
+  bottom_panel_icon_wrap: hsv(180, 90, 80)
+  bottom_panel_icon_selection: hsv(180, 90, 80)
+  bottom_panel_icon_lock: hsv(0, 90, 80)
+  bottom_panel_icon_highlight: hsv(300, 90, 80)
+edit:
+  oct/backgroundColor: = ui.background
+  caret: = flat.100
+  lineHighlight: = standout-tint-low.20
+  findHighlight: = standout-tint-high.40
+  findHighlightForeground: = flat.100
+  selection: = standout-tint-low.40
+  selectionBorder: = standout-tint-high.40
+  inactiveSelection: = standout-tint-low.30
+  invisibles: = standout-tint-high.pop
 
+markdown:
+  oct/backgroundColor: = markdown.background
+  foreground: hsl(60, 10, 97)
+  background: hsl(60, 0, 10)
+  caret: = edit.caret
+  lineHighlight: = edit.lineHighlight
+  findHighlight: = edit.findHighlight
+  findHighlightForeground: = edit.findHighlightForeground
+  invisibles: = edit.invisibles
+  selection: = edit.selection
+  selectionBorder: = edit.selectionBorder
+  inactiveSelection: = edit.inactiveSelection
+
+widget:
+  oct/backgroundColor: = widget.background
+  foreground: = flat.8
+  background: = flat.75
+  caret: = flat.10
+  selection: = edit.selection
+  selectionBorder: = edit.selectionBorder
+  invisibles: = flat.15
+  comment: = flat.50
+  keyword: hsv(300, 50, 40)
+  constant: hsv(120, 50, 40)
+  string: hsv(0, 50, 40)
+  escape: hsv(240, 50, 40)

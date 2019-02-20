@@ -1,0 +1,37 @@
+/* ─────────────────────────────────────────────────────────────────────────///╮
+ *  Code Folding Buttons                                                       │
+ *///──────────────────────────────────────────────────────────────────────────╯
+
+	{
+		"class": "fold_button_control",
+		"layer0.opacity": { "target": 0.0, "speed": 2.0, "interpolation": "smoothstep" },
+		"layer0.tint": [74, 74, 37, 128],
+		"layer0.texture": "Theme - BespokePixels/media/fold-bg.png",
+		"layer1.texture": "Theme - BespokePixels/media/fold-closed.png",
+		"layer1.tint": [255, 0, 0, 160],
+		"layer1.opacity": 1.0,
+		"content_margin": [12, 8]
+	},
+	{
+		"class": "fold_button_control",
+		"attributes": ["pressed"],
+		"layer1.texture": "Theme - BespokePixels/media/fold-open.png",
+		"layer1.tint": [128, 255, 0, 160]
+	},
+	{
+		"class": "fold_button_control",
+		"attributes": ["expanded"],
+		"layer1.texture": "Theme - BespokePixels/media/fold-open.png",
+		"layer1.tint": [255, 255, 128, 160]
+	},
+	{
+		"class": "fold_button_control",
+		"attributes": ["pressed", "expanded"],
+		"layer1.texture": "Theme - BespokePixels/media/fold-closed.png",
+		"layer1.tint": [255, 128, 0, 160]
+	},
+	{
+		"class": "fold_button_control",
+		"attributes": ["hover"],
+		"layer0.opacity": 1.0
+	},

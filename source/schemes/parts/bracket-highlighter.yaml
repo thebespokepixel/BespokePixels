@@ -1,4 +1,4 @@
-  # Bracket Highlighter ##########################################################
+  # Bracket Highlighter ########################################################
   - name: Bracket Tag
     scope: brackethighlighter.tag
     settings:

@@ -1,0 +1,18 @@
+/* ─────────────────────────────────────────────────────────────────────────///╮
+ *  Tooltip                                                                    │
+ *///──────────────────────────────────────────────────────────────────────────╯
+
+	// Tooltip container
+	{
+		"class": "tool_tip_control",
+		"layer0.tint": [38, 38, 26], // 02
+		"layer0.inner_margin": [2,2],
+		"layer0.opacity": 1,
+		"content_margin": [4,4]
+	},
+	// Tooltip content
+	{
+		"class": "tool_tip_label_control",
+		"font.face": "InputSansCondensed Light",
+		"color": [248, 248, 223]
+	},

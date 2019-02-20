@@ -1,0 +1,31 @@
+/* ─────────────────────────────────────────────────────────────────────────///╮
+ *  Icons                                                                      │
+ *///──────────────────────────────────────────────────────────────────────────╯
+
+	{
+		"class": "icon_file_type",
+		"content_margin": [8, 8],
+		"layer0.opacity": 1.0,
+		"layer0.tint": [128, 128, 90],
+		"layer0.inner_margin": [-1, 2, 0, -4]
+	},
+	{
+		"class": "icon_file_type",
+		"parents": [{"class": "tree_row","attributes": ["hover"]}],
+		"layer0.tint": [255, 255, 255]
+	},
+	{
+		"class": "icon_file_type",
+		"parents": [{"class": "tree_row","attributes": ["selected"]}],
+		"layer0.tint": [255, 255, 255]
+	},
+	{
+		"class": "icon_folder",
+		"layer0.opacity": 0.0,
+		"content_margin": [0, 0]
+	},
+	{
+		"class": "icon_folder_loading",
+		"content_margin": [0, 0],
+		"layer0.opacity": 0.0
+	}

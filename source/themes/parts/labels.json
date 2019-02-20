@@ -1,0 +1,36 @@
+/* ─────────────────────────────────────────────────────────────────────────///╮
+ *  Labels                                                                     │
+ *///──────────────────────────────────────────────────────────────────────────╯
+
+	// General labels
+	{
+		"class": "label_control",
+		"font.face": "InputSansNarrow Light",
+		"color": [128, 128, 90],
+		"shadow_color": [255, 255, 255, 0],
+		"shadow_offset": [0, 0]
+	},
+
+	// Text field labels
+	{
+		"class": "label_control",
+		"parents": [{"class": "panel_control"}]
+	},
+
+	// Button labels
+	{
+		"class": "label_control",
+		"parents": [{"class": "button_control"}],
+		"font.face": "Input Mono Narrow",
+		"color": [128, 128, 90]
+	},
+	{
+		"class": "label_control",
+		"parents": [{"class": "button_control", "attributes": ["hover"]}],
+		"color": [204, 157, 21]
+	},
+	{
+		"class": "label_control",
+		"parents": [{"class": "button_control", "attributes": ["pressed"]}],
+		"color": [204, 204, 103]
+	},

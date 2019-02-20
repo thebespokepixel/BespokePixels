@@ -1,0 +1,97 @@
+/* ─────────────────────────────────────────────────────────────────────────///╮
+ *  Settings                                                                   │
+ *///──────────────────────────────────────────────────────────────────────────╯
+
+	// Tab auto width
+	{
+		"class": "tabset_control",
+		"settings": ["BespokePixels_tabs_auto_width"],
+		"tab_width": 0
+	},
+
+	// Tab vertical size
+	{
+		"class": "tabset_control",
+		"settings": ["BespokePixels_tabs_small"],
+		"tab_height": 28
+	},
+	{
+		"class": "tabset_control",
+		"settings": ["BespokePixels_tabs_large"],
+		"tab_height": 40
+	},
+	{
+		"class": "tabset_control",
+		"settings": ["BespokePixels_tabs_xlarge"],
+		"tab_height": 46
+	},
+	{
+		"class": "tabset_control",
+		"settings": ["BespokePixels_tabs_xlarge"],
+		"tab_height": 46
+	},
+	// Tab labels font size
+	{
+		"class": "tab_label",
+		"settings": ["BespokePixels_tabs_font_small"],
+		"font.size": 11.0
+	},
+	{
+		"class": "tab_label",
+		"settings": ["BespokePixels_tabs_font_large"],
+		"font.size": 12.9
+	},
+
+	// Sidebar Vertical Spacing
+	{
+		"class": "sidebar_tree",
+		"settings": ["BespokePixels_sidebar_xsmall"],
+		"row_padding": [4, 1]
+	},
+	{
+		"class": "sidebar_tree",
+		"settings": ["BespokePixels_sidebar_small"],
+		"row_padding": [4, 2]
+	},
+	{
+		"class": "sidebar_tree",
+		"settings": ["BespokePixels_sidebar_large"],
+		"row_padding": [4, 6]
+	},
+	{
+		"class": "sidebar_tree",
+		"settings": ["BespokePixels_sidebar_xlarge"],
+		"row_padding": [4, 8]
+	},
+
+	// Sidebar labels font size
+	{
+		"class": "sidebar_label",
+		"settings": ["BespokePixels_sidebar_font_small"],
+		"font.size": 11.0
+	},
+	{
+		"class": "sidebar_label",
+		"settings": ["BespokePixels_sidebar_font_large"],
+		"font.size": 13.0
+	},
+	{
+		"class": "sidebar_label",
+		"settings": ["BespokePixels_sidebar_font_xlarge"],
+		"font.size": 14.0
+	},
+
+	// Sidebar Folder Colouring
+	{
+		"class": "disclosure_button_control",
+		"settings": ["BespokePixels_color_expanded_folder"],
+		"attributes": ["expanded"],
+		"layer0.tint": [21, 204, 21]
+	},
+	{
+		"class": "disclosure_button_control",
+		"settings": ["BespokePixels_color_expanded_folder"],
+		"attributes": ["expanded"],
+		"parents": [{"class": "tree_row","attributes": ["hover"]}],
+		"layer0.tint": [127, 255, 127]
+	},

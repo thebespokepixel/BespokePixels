@@ -5,7 +5,7 @@
 
     {
         "class": "sheet_container_control",
-        "layer0.tint": [33, 33, 18],
+        "layer0.tint": [31, 31, 20],
         "layer0.opacity": 1
     },
 
@@ -16,7 +16,7 @@
     {
         "class": "grid_layout_control",
         "border_size": 1,
-        "border_color": [78, 78, 54]
+        "border_color": [153, 153, 102]
     },
 /* ─────────────────────────────────────────────────────────────────────────///╮
  *  @Dialog Layout                                                             │
@@ -24,20 +24,20 @@
 
     {
       "class": "progress_gauge_control",
-      "layer0.tint": [96, 96, 48],
+      "layer0.tint": [191, 191, 64],
       "layer0.opacity": 1.0,
       "content_margin": [16, 8]
     },
 
     {
       "class": "dialog",
-      "layer0.tint": [52, 52, 36],
+      "layer0.tint": [92, 92, 61],
       "layer0.opacity": 1.0
     },
 
     {
       "class": "progress_bar_control",
-      "layer0.tint": [33, 33, 18],
+      "layer0.tint": [31, 31, 20],
       "layer0.opacity": 1.0
     },
 
@@ -317,7 +317,6 @@
         "font.italic": true,
         "fg": [127, 255, 127, 120]
     },
-
 
 /* ─────────────────────────────────────────────────────────────────────────///╮
  *  Code Folding Buttons                                                       │
@@ -852,7 +851,6 @@
 		"layer0.opacity": 1
 	},
 
-
 /* ─────────────────────────────────────────────────────────────────────────///╮
  *  Standard Text Buttons                                                      │
  *///──────────────────────────────────────────────────────────────────────────╯
@@ -1060,13 +1058,13 @@
 		"class": "icon_regex",
 		"content_margin": [8, 8],
 		"layer0.texture": "Theme - BespokePixels/media/regex.png",
-		"layer0.tint": [153, 153, 77],
+		"layer0.tint": [204, 204, 102],
 		"layer0.opacity": 1,
 		"layer1.texture": "Theme - BespokePixels/media/regex.png",
-		"layer1.tint": [204, 21, 204],
+		"layer1.tint": [204, 20, 204],
 		"layer1.opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep" },
 		"layer2.texture": "Theme - BespokePixels/media/regex.png",
-		"layer2.tint": [248, 248, 223],
+		"layer2.tint": [255, 170, 0],
 		"layer2.opacity": { "target": 0.0, "speed": 2.0, "interpolation": "smoothstep" }
 	},
 	{
@@ -1089,13 +1087,13 @@
 		"class": "icon_case",
 		"content_margin": [8, 8],
 		"layer0.texture": "Theme - BespokePixels/media/casesens.png",
-		"layer0.tint": [153, 153, 77],
+		"layer0.tint": [204, 204, 102],
 		"layer0.opacity": 1,
 		"layer1.texture": "Theme - BespokePixels/media/casesens.png",
-		"layer1.tint": [204, 21, 21],
+		"layer1.tint": [204, 20, 20],
 		"layer1.opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep" },
 		"layer2.texture": "Theme - BespokePixels/media/casesens.png",
-		"layer2.tint": [248, 248, 223],
+		"layer2.tint": [255, 170, 0],
 		"layer2.opacity": { "target": 0.0, "speed": 2.0, "interpolation": "smoothstep" }
 	},
 	{
@@ -1118,13 +1116,13 @@
 		"class": "icon_whole_word",
 		"content_margin": [8, 8],
 		"layer0.texture": "Theme - BespokePixels/media/wholeword.png",
-		"layer0.tint": [153, 153, 77],
+		"layer0.tint": [204, 204, 102],
 		"layer0.opacity": 1,
 		"layer1.texture": "Theme - BespokePixels/media/wholeword.png",
-		"layer1.tint": [204, 21, 21],
+		"layer1.tint": [204, 20, 20],
 		"layer1.opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep" },
 		"layer2.texture": "Theme - BespokePixels/media/wholeword.png",
-		"layer2.tint": [248, 248, 223],
+		"layer2.tint": [255, 170, 0],
 		"layer2.opacity": { "target": 0.0, "speed": 2.0, "interpolation": "smoothstep" }
 	},
 	{
@@ -1152,13 +1150,13 @@
 		"class": "icon_context",
 		"content_margin": [8, 8],
 		"layer0.texture": "Theme - BespokePixels/media/context.png",
-		"layer0.tint": [153, 153, 77],
+		"layer0.tint": [204, 204, 102],
 		"layer0.opacity": 1,
 		"layer1.texture": "Theme - BespokePixels/media/context.png",
-		"layer1.tint": [21, 204, 21],
+		"layer1.tint": [20, 204, 20],
 		"layer1.opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep" },
 		"layer2.texture": "Theme - BespokePixels/media/context.png",
-		"layer2.tint": [248, 248, 223],
+		"layer2.tint": [255, 170, 0],
 		"layer2.opacity": { "target": 0.0, "speed": 2.0, "interpolation": "smoothstep" }
 	},
 	{
@@ -1181,13 +1179,13 @@
 		"class": "icon_use_buffer",
 		"content_margin": [8, 8],
 		"layer0.texture": "Theme - BespokePixels/media/buffer.png",
-		"layer0.tint": [153, 153, 77],
+		"layer0.tint": [204, 204, 102],
 		"layer0.opacity": 1,
 		"layer1.texture": "Theme - BespokePixels/media/buffer.png",
-		"layer1.tint": [21, 204, 21],
+		"layer1.tint": [20, 204, 20],
 		"layer1.opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep" },
 		"layer2.texture": "Theme - BespokePixels/media/buffer.png",
-		"layer2.tint": [248, 248, 223],
+		"layer2.tint": [255, 170, 0],
 		"layer2.opacity": { "target": 0.0, "speed": 2.0, "interpolation": "smoothstep" }
 	},
 	{
@@ -1214,13 +1212,13 @@
 		"class": "icon_reverse",
 		"content_margin": [8, 8],
 		"layer0.texture": "Theme - BespokePixels/media/reverse.png",
-		"layer0.tint": [153, 153, 77],
+		"layer0.tint": [204, 204, 102],
 		"layer0.opacity": 1,
 		"layer1.texture": "Theme - BespokePixels/media/reverse.png",
-		"layer1.tint": [204, 21, 204],
+		"layer1.tint": [204, 20, 204],
 		"layer1.opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep" },
 		"layer2.texture": "Theme - BespokePixels/media/reverse.png",
-		"layer2.tint": [248, 248, 223],
+		"layer2.tint": [255, 170, 0],
 		"layer2.opacity": { "target": 0.0, "speed": 2.0, "interpolation": "smoothstep" }
 	},
 	{
@@ -1243,13 +1241,13 @@
 		"class": "icon_wrap",
 		"content_margin": [8, 8],
 		"layer0.texture": "Theme - BespokePixels/media/wrap.png",
-		"layer0.tint": [153, 153, 77],
+		"layer0.tint": [204, 204, 102],
 		"layer0.opacity": 1,
 		"layer1.texture": "Theme - BespokePixels/media/wrap.png",
-		"layer1.tint": [204, 204, 21],
+		"layer1.tint": [20, 204, 204],
 		"layer1.opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep" },
 		"layer2.texture": "Theme - BespokePixels/media/wrap.png",
-		"layer2.tint": [248, 248, 223],
+		"layer2.tint": [255, 170, 0],
 		"layer2.opacity": { "target": 0.0, "speed": 2.0, "interpolation": "smoothstep" }
 	},
 	{
@@ -1272,13 +1270,13 @@
 		"class": "icon_in_selection",
 		"content_margin": [8, 8],
 		"layer0.texture": "Theme - BespokePixels/media/selection.png",
-		"layer0.tint": [153, 153, 77],
+		"layer0.tint": [204, 204, 102],
 		"layer0.opacity": 1,
 		"layer1.texture": "Theme - BespokePixels/media/selection.png",
-		"layer1.tint": [204, 204, 21],
+		"layer1.tint": [20, 204, 204],
 		"layer1.opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep" },
 		"layer2.texture": "Theme - BespokePixels/media/selection.png",
-		"layer2.tint": [248, 248, 223],
+		"layer2.tint": [255, 170, 0],
 		"layer2.opacity": { "target": 0.0, "speed": 2.0, "interpolation": "smoothstep" }
 	},
 	{
@@ -1306,13 +1304,13 @@
 		"class": "icon_preserve_case",
 		"content_margin": [8, 8],
 		"layer0.texture": "Theme - BespokePixels/media/lock.png",
-		"layer0.tint": [153, 153, 77],
+		"layer0.tint": [204, 204, 102],
 		"layer0.opacity": 1,
 		"layer1.texture": "Theme - BespokePixels/media/lock.png",
-		"layer1.tint": [204, 21, 21],
+		"layer1.tint": [204, 20, 20],
 		"layer1.opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep" },
 		"layer2.texture": "Theme - BespokePixels/media/lock.png",
-		"layer2.tint": [248, 248, 223],
+		"layer2.tint": [255, 170, 0],
 		"layer2.opacity": { "target": 0.0, "speed": 2.0, "interpolation": "smoothstep" }
 	},
 	{
@@ -1340,13 +1338,13 @@
 		"class": "icon_highlight",
 		"content_margin": [8, 8],
 		"layer0.texture": "Theme - BespokePixels/media/highlight.png",
-		"layer0.tint": [153, 153, 77],
+		"layer0.tint": [204, 204, 102],
 		"layer0.opacity": 1,
 		"layer1.texture": "Theme - BespokePixels/media/highlight.png",
-		"layer1.tint": [21, 204, 21],
+		"layer1.tint": [204, 20, 204],
 		"layer1.opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep" },
 		"layer2.texture": "Theme - BespokePixels/media/highlight.png",
-		"layer2.tint": [248, 248, 223],
+		"layer2.tint": [255, 170, 0],
 		"layer2.opacity": { "target": 0.0, "speed": 2.0, "interpolation": "smoothstep" }
 	},
 	{

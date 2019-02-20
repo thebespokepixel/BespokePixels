@@ -1,7 +1,12 @@
 %YAML 1.2
 ---
 #=include parts/header.yaml
-#=include parts/main.yaml
+
+settings:
+  - settings:
+      foreground: '<%= palette.npm.foreground.hex %>'
+      background: '<%= palette.npm.background.hex %>'
+#=include parts/shared-settings.yaml
 
   - name: JSON Key - Level 2
     scope: >-

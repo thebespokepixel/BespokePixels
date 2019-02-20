@@ -18,13 +18,13 @@
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#d2d2ac</string>
+          <string>#ccccb3</string>
           <key>background</key>
-          <string>#212112</string>
+          <string>#1f1f14</string>
           <key>gutter</key>
-          <string>#14140E</string>
+          <string>#181810</string>
           <key>gutterForeground</key>
-          <string>#81815A</string>
+          <string>#999966</string>
           <key>tagsOptions</key>
           <string>stippled_underline</string>
           <key>bracketsForeground</key>
@@ -36,13 +36,21 @@
           <key>bracketContentsOptions</key>
           <string>underline</string>
           <key>caret</key>
-          <string>#FFFFEE</string>
+          <string>#ffffff</string>
           <key>lineHighlight</key>
-          <string>#E0E29010</string>
+          <string>#4d4d1933</string>
           <key>findHighlight</key>
-          <string>#CC9D1580</string>
+          <string>#999933b3</string>
           <key>findHighlightForeground</key>
-          <string>#FFFFCC</string>
+          <string>#ffffff</string>
+          <key>selection</key>
+          <string>#99993333</string>
+          <key>selectionBorder</key>
+          <string>#999933b3</string>
+          <key>inactiveSelection</key>
+          <string>#73732633</string>
+          <key>invisibles</key>
+          <string>#ffaa00b3</string>
           <key>guide</key>
           <string>#4E4E36</string>
           <key>activeGuide</key>
@@ -53,18 +61,10 @@
           <string>#9D15CCCC</string>
           <key>highlightForeground</key>
           <string>#FFCCFF</string>
-          <key>selection</key>
-          <string>#4A4A2580</string>
-          <key>selectionBorder</key>
-          <string>#99994D80</string>
-          <key>inactiveSelection</key>
-          <string>#60603040</string>
-          <key>invisibles</key>
-          <string>#4E4E36</string>
           <key>popupCss</key>
           <string>html { background-color: #343424; color: #FFFFB2; padding: 16px; } a { color: #808041; display: block; text-decoration: none; } .error, .deleted { color: #992F2F; } .success, .inserted { color: #2F992F; } .warning, .modified { color: #99992F; }</string>
           <key>shadow</key>
-          <string>#101007</string>
+          <string>#181810</string>
           <key>shadowWidth</key>
           <string>30</string>
         </dict>
@@ -1302,7 +1302,7 @@
         <key>settings</key>
         <dict>
           <key>background</key>
-          <string>#7BB664 89</string>
+          <string>#7BB66489</string>
         </dict>
       </dict>
       <dict>
