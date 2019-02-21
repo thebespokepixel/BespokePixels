@@ -10,7 +10,7 @@ colorSpaceName: sRGB
 settings:
   - settings:
       foreground: '#181810'
-      background: '#ccccb3'
+      background: '#999966'
       caret: '#1f1f14'
       invisibles: '#2e2e1f'
       selection: '#99993333'

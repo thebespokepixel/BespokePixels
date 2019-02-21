@@ -1,8 +1,8 @@
 oct/:
   defaultView: minimal
-  identityColorTop: =main.foreground
-  identityColorSide:  =flat.30
-  identityColorBottom: =main.background
+  identityColorTop: = main.foreground
+  identityColorSide:  = flat.30
+  identityColorBottom: = main.background
 main:
   oct/:
     view: cards
@@ -10,6 +10,7 @@ main:
     backgroundColor: = main.background
   foreground: = flat.75
   background: = flat.10
+  darkBackground: = flat.8
   shadow: = flat.8
 flat:
   oct/:
@@ -107,7 +108,7 @@ ui:
   oct/backgroundColor: = ui.background
   background: = main.background
   foreground: = main.foreground
-  gutter: = main.shadow
+  gutter: = main.darkBackground
   gutterForeground: = flat.30
   shadow: = main.shadow
   shadow_fade: hsla(60, 30, 8, 0.5)
@@ -115,20 +116,20 @@ ui:
   sheet_container_control: = main.background
   grid_layout_control: = flat.50
   progress_gauge_control: = standout.50
-  dialog: = flat.30
+  dialog: = flat.15
   progress_bar_control: = main.background
 
-  tooltip_background: = flat.8
+  tooltip_background: = main.darkBackground
   tooltip_foreground: = flat.75
 
   scroll_bar_control: = flat.20
   scroll_bar_puck: = flat.40
 
-  button_background: = flat.10
-  button_hover: = flat.15
+  button_background: = flat.15
+  button_hover: = flat.20
   button_pressed: = standout.20
 
-  tab_background: = flat.8
+  tab_background: = main.darkBackground
   tab_background_normal: = flat.20
   tab_background_dirty: hsv(0, 80, 40)
   tab_background_dirty_hover: hsv(0, 90, 80)
@@ -144,11 +145,11 @@ ui:
   tab_label_selected: = standout-grey.75
   tab_label_transient: hsv(120, 60, 60)
 
-  sidebar_background: = flat.8
+  sidebar_background: = main.darkBackground
   sidebar_heading: = standout.30
   sidebar_seperator: = flat.10
   sidebar_row: = flat.15
-  sidebar_label: = flat.50
+  sidebar_label: = standout-grey.50
   sidebar_folder_label: = standout-grey.75
   sidebar_folder_label_hover: = standout-grey.90
   sidebar_folder_label_selected: = flat.100
@@ -161,13 +162,13 @@ ui:
   sidebar_folder_open: hsv(120, 90, 80)
   sidebar_folder_open_hover: hsv(120, 90, 100)
 
-  statusbar_background: = flat.10
-  statusbar_seperator: = flat.8
+  statusbar_background: = main.background
+  statusbar_seperator: = main.darkBackground
   statusbar_button_hover: = standout.20
   statusbar_lable: = flat.40
   statusbar_lable_hover: = standout.pop
 
-  bottom_panel_background: = flat.8
+  bottom_panel_background: = main.background
   bottom_panel_icon_default: = standout.60
   bottom_panel_icon_hover: = standout.pop
   bottom_panel_icon_regex: hsv(300, 90, 80)
@@ -183,11 +184,11 @@ ui:
   bottom_panel_button_default: = standout.60
   bottom_panel_button_hover: = standout.pop
 
-  command_panel_background: = flat.8
+  command_panel_background: = main.darkBackground
   command_panel_row: = flat.10
   command_panel_row_selected: = flat.20
 
-  quick_panel_background: = flat.8
+  quick_panel_background: = main.darkBackground
   quick_panel_row: = flat.10
   quick_panel_row_selected: = flat.20
   quick_panel_lable_fg: = flat.50
@@ -235,8 +236,8 @@ markdown:
 
 widget:
   oct/backgroundColor: = widget.background
-  foreground: = flat.8
-  background: = flat.75
+  foreground: = main.darkBackground
+  background: = flat.50
   caret: = flat.10
   selection: = edit.selection
   selectionBorder: = edit.selectionBorder
