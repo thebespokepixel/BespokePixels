@@ -119,6 +119,16 @@ contexts:
           scope: constant.character.escape.json
         - match: \\.
           scope: invalid.illegal.unrecognized-string-escape.json
+  template:
+    - match: '\$\{'
+      captures:
+        0: string.interpolated.es
+      push:
+        - meta_scope: variable.es
+        - match: '\}'
+          captures:
+            0: string.interpolated.es
+          pop: true
   value:
     - include: constant
     - include: number
@@ -126,3 +136,4 @@ contexts:
     - include: array
     - include: object
     - include: comments
+    - include: template

@@ -168,7 +168,7 @@ ui:
   statusbar_lable: = flat.40
   statusbar_lable_hover: = standout.pop
 
-  bottom_panel_background: = main.background
+  bottom_panel_background: = main.darkBackground
   bottom_panel_icon_default: = standout.60
   bottom_panel_icon_hover: = standout.pop
   bottom_panel_icon_regex: hsv(300, 90, 80)
