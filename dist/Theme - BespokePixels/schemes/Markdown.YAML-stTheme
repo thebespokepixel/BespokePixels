@@ -16,7 +16,7 @@ settings:
       findHighlightForeground: '#ffffff'
       inactiveSelection: '#73732633'
       caret: '#ffffff'
-      invisibles: '#ffaa00b3'
+      invisibles: '#ffaa0066'
       selection: '#99993333'
       selectionBorder: '#999933b3'
       shadow: '#181810'

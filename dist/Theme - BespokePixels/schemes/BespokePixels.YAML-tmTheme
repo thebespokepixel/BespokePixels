@@ -12,7 +12,7 @@ settings:
       foreground: '#ccccb3'
       background: '#1f1f14'
       gutter: '#181810'
-      gutterForeground: '#999966'
+      gutterForeground: '#5c5c3d'
 
       tagsOptions: stippled_underline
       bracketsForeground: '#CCCC15'
@@ -30,7 +30,7 @@ settings:
       selectionBorder: '#999933b3'
       inactiveSelection: '#73732633'
 
-      invisibles: '#ffaa00b3'
+      invisibles: '#ffaa0066'
 
       guide: '#4E4E36'
       activeGuide: '#CC9D15CC'

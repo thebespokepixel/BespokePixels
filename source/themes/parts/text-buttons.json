@@ -8,11 +8,11 @@
 		"content_margin": [0, 4],
 		"min_size": [120, 18],
 		"layer0.opacity": 1.0,
-		"layer0.tint": [96, 96, 48],
+		"layer0.tint": ${palette.ui.button_pressed.rgb},
 		"layer1.opacity": { "target": 1.0, "speed": 5.0, "interpolation": "smoothstep" },
-		"layer1.tint": [74, 74, 37],
+		"layer1.tint": ${palette.ui.button_hover.rgb},
 		"layer2.opacity": { "target": 1.0, "speed": 3.0, "interpolation": "smoothstep" },
-		"layer2.tint": [52, 52, 36]
+		"layer2.tint": ${palette.ui.button_background.rgb},
 
 	},
 

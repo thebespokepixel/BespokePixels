@@ -36,11 +36,25 @@ standout:
   40: hsl(60, 50, 40)
   35: hsl(60, 50, 35)
   30: hsl(60, 50, 30)
+  20: hsl(60, 50, 20)
+standout-grey:
+  oct/:
+    view: Fan
+    backgroundColor: = main.background
+  90: hsl(60, 5, 90)
+  75: hsl(60, 5, 75)
+  60: hsl(60, 5, 60)
+  50: hsl(60, 5, 50)
+  45: hsl(60, 5, 45)
+  40: hsl(60, 5, 40)
+  35: hsl(60, 5, 35)
+  30: hsl(60, 5, 30)
+  20: hsl(60, 5, 20)
 standout-tint-high:
   oct/:
     view: Fan
     backgroundColor: = main.background
-  pop: hsla(40, 100, 50, 0.7)
+  pop: hsla(40, 100, 50, 0.6)
   50: hsla(60, 50, 50, 0.7)
   45: hsla(60, 50, 45, 0.7)
   40: hsla(60, 50, 40, 0.7)
@@ -51,7 +65,7 @@ standout-tint-low:
   oct/:
     view: Fan
     backgroundColor: = main.background
-  pop: hsla(40, 100, 50, 0.2)
+  pop: hsla(40, 100, 50, 0.4)
   50: hsla(60, 50, 50, 0.2)
   45: hsla(60, 50, 45, 0.2)
   40: hsla(60, 50, 40, 0.2)
@@ -94,7 +108,7 @@ ui:
   background: = main.background
   foreground: = main.foreground
   gutter: = main.shadow
-  gutterForeground: = flat.50
+  gutterForeground: = flat.30
   shadow: = main.shadow
   shadow_fade: hsla(60, 30, 8, 0.5)
   fields: rgb(221, 228, 208)
@@ -103,8 +117,59 @@ ui:
   progress_gauge_control: = standout.50
   dialog: = flat.30
   progress_bar_control: = main.background
+
+  tooltip_background: = flat.8
+  tooltip_foreground: = flat.75
+
+  scroll_bar_control: = flat.20
+  scroll_bar_puck: = flat.40
+
+  button_background: = flat.10
+  button_hover: = flat.15
+  button_pressed: = standout.20
+
+  tab_background: = flat.8
+  tab_background_normal: = flat.20
+  tab_background_dirty: hsv(0, 80, 40)
+  tab_background_dirty_hover: hsv(0, 90, 80)
+  tab_background_dirty_selected: hsv(0, 90, 40)
+  tab_close_button_default: = standout.40
+  tab_close_button_selected: = standout.60
+  tab_close_button_hover: = standout.pop
+  tab_close_button_dirty: hsv(0, 90, 60)
+  tab_close_button_dirty_selected: hsv(0, 90, 80)
+  tab_close_button_dirty_hover: hsv(0, 90, 100)
+  tab_label: = standout-grey.50
+  tab_label_hover: = standout-grey.60
+  tab_label_selected: = standout-grey.75
+  tab_label_transient: hsv(120, 60, 60)
+
+  sidebar_background: = flat.8
+  sidebar_heading: = standout.30
+  sidebar_seperator: = flat.10
+  sidebar_row: = flat.15
+  sidebar_label: = flat.50
+  sidebar_folder_label: = standout-grey.75
+  sidebar_folder_label_hover: = standout-grey.90
+  sidebar_folder_label_selected: = flat.100
+  sidebar_close_button_default: = standout.60
+  sidebar_close_button_hover: = standout.pop
+  sidebar_close_button_dirty: hsv(0, 90, 80)
+  sidebar_close_button_dirty_hover: hsv(0, 90, 100)
+  sidebar_folder_closed: = standout.60
+  sidebar_folder_closed_hover: = standout.pop
+  sidebar_folder_open: hsv(120, 90, 80)
+  sidebar_folder_open_hover: hsv(120, 90, 100)
+
+  statusbar_background: = flat.10
+  statusbar_seperator: = flat.8
+  statusbar_button_hover: = standout.20
+  statusbar_lable: = flat.40
+  statusbar_lable_hover: = standout.pop
+
+  bottom_panel_background: = flat.8
   bottom_panel_icon_default: = standout.60
-  bottom_panel_icon_rollover: = standout.pop
+  bottom_panel_icon_hover: = standout.pop
   bottom_panel_icon_regex: hsv(300, 90, 80)
   bottom_panel_icon_casesens: hsv(0, 90, 80)
   bottom_panel_icon_wholeword: hsv(0, 90, 80)
@@ -115,6 +180,35 @@ ui:
   bottom_panel_icon_selection: hsv(180, 90, 80)
   bottom_panel_icon_lock: hsv(0, 90, 80)
   bottom_panel_icon_highlight: hsv(300, 90, 80)
+  bottom_panel_button_default: = standout.60
+  bottom_panel_button_hover: = standout.pop
+
+  command_panel_background: = flat.8
+  command_panel_row: = flat.10
+  command_panel_row_selected: = flat.20
+
+  quick_panel_background: = flat.8
+  quick_panel_row: = flat.10
+  quick_panel_row_selected: = flat.20
+  quick_panel_lable_fg: = flat.50
+  quick_panel_lable_match: = standout.40
+  quick_panel_lable_selected: = standout.50
+  quick_panel_lable_selected_match: = standout.pop
+  quick_panel_path_lable_fg: = flat.30
+  quick_panel_path_lable_match: = standout.30
+  quick_panel_path_lable_selected: = standout.40
+  quick_panel_path_lable_selected_match: = standout.50
+  quick_panel_score_lable_fg: = standout.30
+  quick_panel_score_lable_selected: = standout.50
+
+  fold_button_background: = flat.20
+  fold_button_closed: hsv(0, 100, 100)
+  fold_button_expanded: = flat.50
+  fold_button_pressed: hsv(120, 100, 100)
+  fold_button_expanded_pressed: = standout.pop
+
+  minimap: = standout.60
+
 edit:
   oct/backgroundColor: = ui.background
   caret: = flat.100
@@ -124,7 +218,7 @@ edit:
   selection: = standout-tint-low.40
   selectionBorder: = standout-tint-high.40
   inactiveSelection: = standout-tint-low.30
-  invisibles: = standout-tint-high.pop
+  invisibles: = standout-tint-low.pop
 
 markdown:
   oct/backgroundColor: = markdown.background

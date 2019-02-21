@@ -6,7 +6,7 @@
 	{
 		"class": "tabset_control",
 		"layer0.opacity": 1.0,
-		"layer0.tint": [20, 20, 14],
+		"layer0.tint": ${palette.ui.tab_background.rgb},
 		"tint_index": 1,
 		"tab_overlap": -1,
 		"tab_width": 160,
@@ -24,9 +24,9 @@
 		"class": "tab_control",
 		"layer0.opacity": 1.0,
 		"tint_index": 0,
-		"layer2.tint": [74, 74, 37],
+		"layer2.tint":${palette.ui.tab_background_normal.rgb},
 		"layer2.opacity": { "target": 0.2, "speed": 1.0, "interpolation": "smoothstep" },
-		"layer3.tint": [20, 20, 14],
+		"layer3.tint": ${palette.ui.tab_background.rgb},
 		"layer3.opacity": 0.6,
 		"layer3.texture": "Theme - BespokePixels/media/shadow-tab.png",
 		"layer3.inner_margin": [0, 0, 0, 28],
@@ -59,19 +59,19 @@
 		"class": "tab_control",
 		"settings": ["highlight_modified_tabs"],
 		"attributes": ["dirty"],
-		"tint_modifier": [153, 47, 47, 64]
+		"tint_modifier": ${palette.ui.tab_background_dirty.rgb}
 	},
 	{
 		"class": "tab_control",
 		"settings": ["highlight_modified_tabs"],
 		"attributes": ["dirty", "hover"],
-		"tint_modifier": [153, 47, 47, 128]
+		"tint_modifier": ${palette.ui.tab_background_dirty_hover.rgb}
 	},
 	{
 		"class": "tab_control",
 		"settings": ["highlight_modified_tabs"],
 		"attributes": ["dirty", "selected"],
-		"tint_modifier": [204, 21, 21, 64]
+		"tint_modifier": ${palette.ui.tab_background_dirty_selected.rgb}
 	},
 
 	// Tab dirty state (close button hidden)
@@ -79,11 +79,11 @@
 		"class": "tab_control",
 		"settings": ["!show_tab_close_buttons", "highlight_modified_tabs"],
 		"attributes": ["dirty"],
-		"tint_modifier": [204, 21, 21, 64]
+		"tint_modifier": ${palette.ui.tab_background_dirty.rgb}
 	},
 	{
 		"class": "tab_control",
 		"settings": ["!show_tab_close_buttons", "highlight_modified_tabs"],
 		"attributes": ["dirty", "selected"],
-		"tint_modifier": [204, 21, 21, 40]
+		"tint_modifier": ${palette.ui.tab_background_dirty_selected.rgb}
 	},

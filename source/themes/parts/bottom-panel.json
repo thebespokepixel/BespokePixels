@@ -38,7 +38,7 @@
 		"layer1.tint": ${palette.ui.bottom_panel_icon_regex.rgb},
 		"layer1.opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep" },
 		"layer2.texture": "Theme - BespokePixels/media/regex.png",
-		"layer2.tint": ${palette.ui.bottom_panel_icon_rollover.rgb},
+		"layer2.tint": ${palette.ui.bottom_panel_icon_hover.rgb},
 		"layer2.opacity": { "target": 0.0, "speed": 2.0, "interpolation": "smoothstep" }
 	},
 	{
@@ -67,7 +67,7 @@
 		"layer1.tint": ${palette.ui.bottom_panel_icon_casesens.rgb},
 		"layer1.opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep" },
 		"layer2.texture": "Theme - BespokePixels/media/casesens.png",
-		"layer2.tint": ${palette.ui.bottom_panel_icon_rollover.rgb},
+		"layer2.tint": ${palette.ui.bottom_panel_icon_hover.rgb},
 		"layer2.opacity": { "target": 0.0, "speed": 2.0, "interpolation": "smoothstep" }
 	},
 	{
@@ -96,7 +96,7 @@
 		"layer1.tint": ${palette.ui.bottom_panel_icon_wholeword.rgb},
 		"layer1.opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep" },
 		"layer2.texture": "Theme - BespokePixels/media/wholeword.png",
-		"layer2.tint": ${palette.ui.bottom_panel_icon_rollover.rgb},
+		"layer2.tint": ${palette.ui.bottom_panel_icon_hover.rgb},
 		"layer2.opacity": { "target": 0.0, "speed": 2.0, "interpolation": "smoothstep" }
 	},
 	{
@@ -130,7 +130,7 @@
 		"layer1.tint": ${palette.ui.bottom_panel_icon_context.rgb},
 		"layer1.opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep" },
 		"layer2.texture": "Theme - BespokePixels/media/context.png",
-		"layer2.tint": ${palette.ui.bottom_panel_icon_rollover.rgb},
+		"layer2.tint": ${palette.ui.bottom_panel_icon_hover.rgb},
 		"layer2.opacity": { "target": 0.0, "speed": 2.0, "interpolation": "smoothstep" }
 	},
 	{
@@ -159,7 +159,7 @@
 		"layer1.tint": ${palette.ui.bottom_panel_icon_buffer.rgb},
 		"layer1.opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep" },
 		"layer2.texture": "Theme - BespokePixels/media/buffer.png",
-		"layer2.tint": ${palette.ui.bottom_panel_icon_rollover.rgb},
+		"layer2.tint": ${palette.ui.bottom_panel_icon_hover.rgb},
 		"layer2.opacity": { "target": 0.0, "speed": 2.0, "interpolation": "smoothstep" }
 	},
 	{
@@ -192,7 +192,7 @@
 		"layer1.tint": ${palette.ui.bottom_panel_icon_reverse.rgb},
 		"layer1.opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep" },
 		"layer2.texture": "Theme - BespokePixels/media/reverse.png",
-		"layer2.tint": ${palette.ui.bottom_panel_icon_rollover.rgb},
+		"layer2.tint": ${palette.ui.bottom_panel_icon_hover.rgb},
 		"layer2.opacity": { "target": 0.0, "speed": 2.0, "interpolation": "smoothstep" }
 	},
 	{
@@ -221,7 +221,7 @@
 		"layer1.tint": ${palette.ui.bottom_panel_icon_wrap.rgb},
 		"layer1.opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep" },
 		"layer2.texture": "Theme - BespokePixels/media/wrap.png",
-		"layer2.tint": ${palette.ui.bottom_panel_icon_rollover.rgb},
+		"layer2.tint": ${palette.ui.bottom_panel_icon_hover.rgb},
 		"layer2.opacity": { "target": 0.0, "speed": 2.0, "interpolation": "smoothstep" }
 	},
 	{
@@ -250,7 +250,7 @@
 		"layer1.tint": ${palette.ui.bottom_panel_icon_selection.rgb},
 		"layer1.opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep" },
 		"layer2.texture": "Theme - BespokePixels/media/selection.png",
-		"layer2.tint": ${palette.ui.bottom_panel_icon_rollover.rgb},
+		"layer2.tint": ${palette.ui.bottom_panel_icon_hover.rgb},
 		"layer2.opacity": { "target": 0.0, "speed": 2.0, "interpolation": "smoothstep" }
 	},
 	{
@@ -284,7 +284,7 @@
 		"layer1.tint": ${palette.ui.bottom_panel_icon_lock.rgb},
 		"layer1.opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep" },
 		"layer2.texture": "Theme - BespokePixels/media/lock.png",
-		"layer2.tint": ${palette.ui.bottom_panel_icon_rollover.rgb},
+		"layer2.tint": ${palette.ui.bottom_panel_icon_hover.rgb},
 		"layer2.opacity": { "target": 0.0, "speed": 2.0, "interpolation": "smoothstep" }
 	},
 	{
@@ -318,7 +318,7 @@
 		"layer1.tint": ${palette.ui.bottom_panel_icon_highlight.rgb},
 		"layer1.opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep" },
 		"layer2.texture": "Theme - BespokePixels/media/highlight.png",
-		"layer2.tint": ${palette.ui.bottom_panel_icon_rollover.rgb},
+		"layer2.tint": ${palette.ui.bottom_panel_icon_hover.rgb},
 		"layer2.opacity": { "target": 0.0, "speed": 2.0, "interpolation": "smoothstep" }
 	},
 	{

@@ -6,7 +6,7 @@
 	{
 		"class": "scroll_bar_control",
 		"layer0.texture": "",
-		"layer0.tint": [38, 38, 26],
+		"layer0.tint": ${palette.ui.scroll_bar_control.rgb},
 		"layer0.opacity": 1,
 		"blur": false
 	},
@@ -14,14 +14,14 @@
 	// Standard scroll bar corner
 	{
 		"class": "scroll_corner_control",
-		"layer0.tint": [38, 38, 26],
+		"layer0.tint": ${palette.ui.scroll_bar_control.rgb},
 		"layer0.opacity": 1
 	},
 
 	// Standard scroll puck
 	{
 		"class": "puck_control",
-		"layer0.tint": [74, 74, 37],
+		"layer0.tint": ${palette.ui.scroll_bar_puck.rgb},
 		"layer0.opacity": 0.6,
 		"content_margin": [5, 0],
 		"blur": false
@@ -80,5 +80,5 @@
 		"class": "puck_control",
 		"settings": ["overlay_scroll_bars"],
 		"attributes": ["dark"],
-		"layer0.tint": [128, 128, 65]
+		"layer0.tint": ${palette.ui.scroll_bar_puck.rgb},
 	},

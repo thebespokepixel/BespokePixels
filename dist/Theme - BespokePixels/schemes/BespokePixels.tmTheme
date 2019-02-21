@@ -24,7 +24,7 @@
           <key>gutter</key>
           <string>#181810</string>
           <key>gutterForeground</key>
-          <string>#999966</string>
+          <string>#5c5c3d</string>
           <key>tagsOptions</key>
           <string>stippled_underline</string>
           <key>bracketsForeground</key>
@@ -50,7 +50,7 @@
           <key>inactiveSelection</key>
           <string>#73732633</string>
           <key>invisibles</key>
-          <string>#ffaa00b3</string>
+          <string>#ffaa0066</string>
           <key>guide</key>
           <string>#4E4E36</string>
           <key>activeGuide</key>

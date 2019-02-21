@@ -86,12 +86,12 @@
 		"class": "disclosure_button_control",
 		"settings": ["BespokePixels_color_expanded_folder"],
 		"attributes": ["expanded"],
-		"layer0.tint": [21, 204, 21]
+		"layer0.tint": ${palette.ui.sidebar_folder_open.rgb}
 	},
 	{
 		"class": "disclosure_button_control",
 		"settings": ["BespokePixels_color_expanded_folder"],
 		"attributes": ["expanded"],
 		"parents": [{"class": "tree_row","attributes": ["hover"]}],
-		"layer0.tint": [127, 255, 127]
+		"layer0.tint": ${palette.ui.sidebar_folder_open_hover.rgb}
 	},

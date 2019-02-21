@@ -9,9 +9,9 @@
 	},
 	{
 		"class": "status_bar",
-		"layer0.tint": [38, 38, 26],
+		"layer0.tint": ${palette.ui.statusbar_background.rgb},
 		"layer0.opacity": 1,
-		"layer1.tint": [20, 20, 14],
+		"layer1.tint": ${palette.ui.statusbar_seperator.rgb},
 		"layer1.opacity": 1,
 		"layer1.draw_center": false,
 		"layer1.inner_margin": [0, 1, 0, 0],
@@ -23,11 +23,11 @@
 	{
 		"class": "status_button",
 		"min_size": [48, 20],
-		"layer0.tint": [20, 20, 14],
+		"layer0.tint": ${palette.ui.statusbar_seperator.rgb},
 		"layer0.opacity": 1,
 		"layer0.draw_center": false,
 		"layer0.inner_margin": [1, 0, 0, 0],
-		"layer1.tint": [74, 74, 37],
+		"layer1.tint": ${palette.ui.statusbar_button_hover.rgb},
 		"layer1.opacity": { "target": 0.0, "speed": 1.0, "interpolation": "smoothstep" },
 		"layer1.inner_margin": [1, 0, 0, 0],
 		"content_margin": [8, 5, 8, 4]
@@ -53,22 +53,10 @@
 		"class": "label_control",
 		"parents": [{"class": "status_bar"}],
 		"font.face": "InputSansNarrow Light",
-		"color": [128, 128, 65]
+		"color": ${palette.ui.statusbar_lable.rgb}
 	},
 	{
 		"class": "label_control",
 		"parents": [{"class": "status_button", "attributes": ["hover"]}],
-		"color": [204, 157, 21]
-	},
-
-	// panel switcher
-	{
-		"class": "panel_button_control",
-		"layer0.opacity": 1.0,
-		"layer0.tint": [74, 74, 37]
-	},
-	{
-		"class": "panel_button_control",
-		"attributes": ["hover"],
-		"layer0.tint": [204, 157, 21]
+		"color": ${palette.ui.statusbar_lable_hover.rgb}
 	},

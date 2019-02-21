@@ -4,24 +4,24 @@
 	{
 	  "class": "minimap_control",
 	  "settings": ["always_show_minimap_viewport"],
-	  "viewport_color": [178, 178, 124, 64],
-	  "viewport_opacity": { "target": 0.4, "speed": 1.0, "interpolation": "smoothstep" }
+	  "viewport_color": ${palette.ui.minimap.rgb},
+	  "viewport_opacity": { "target": 0.1, "speed": 1.0, "interpolation": "smoothstep" }
 	},
 	{
 	  "class": "minimap_control",
 	  "attributes": ["hover"],
 	  "settings": ["always_show_minimap_viewport"],
-	  "viewport_opacity": { "target": 0.6, "speed": 1.0, "interpolation": "smoothstep" }
+	  "viewport_opacity": { "target": 0.2, "speed": 1.0, "interpolation": "smoothstep" }
 	},
 	{
 	  "class": "minimap_control",
 	  "settings": ["!always_show_minimap_viewport"],
-	  "viewport_color": [178, 178, 124, 64],
+	  "viewport_color": ${palette.ui.minimap.rgb},
 	  "viewport_opacity": { "target": 0.0, "speed": 1.0, "interpolation": "smoothstep" }
 	},
 	{
 	  "class": "minimap_control",
 	  "attributes": ["hover"],
 	  "settings": ["!always_show_minimap_viewport"],
-	  "viewport_opacity": { "target": 0.4, "speed": 4.0, "interpolation": "smoothstep" }
+	  "viewport_opacity": { "target": 0.2, "speed": 4.0, "interpolation": "smoothstep" }
 	},

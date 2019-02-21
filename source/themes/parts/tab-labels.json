@@ -5,25 +5,25 @@
     {
         "class": "tab_label",
         "font.face": "InputSansCondensed Light",
-        "shadow_color": [255, 255, 255, 255],
-        "shadow_offset": [0, 0],
-        "fg": [248, 248, 223, 100],
+        "fg": ${palette.ui.tab_label.rgb},
+        "shadow_color": [0, 0, 0, 40],
+        "shadow_offset": [0, 1],
         "font.size": 12.0
     },
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control","attributes": ["hover"]}],
-        "fg": [248, 248, 223, 160]
+        "fg": ${palette.ui.tab_label_hover.rgb}
     },
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control","attributes": ["selected"]}],
-        "fg": [248, 248, 223, 255],
+        "fg": ${palette.ui.tab_label_selected.rgb},
         "font.face": "InputSansCondensed"
     },
     {
         "class": "tab_label",
         "attributes": ["transient"],
         "font.italic": true,
-        "fg": [127, 255, 127, 120]
+        "fg": ${palette.ui.tab_label_transient.rgb},
     },

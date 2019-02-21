@@ -8,22 +8,22 @@
 		"layer0.texture": "Theme - BespokePixels/media/close.png",
 		"layer0.inner_margin": [4, 12, 12, 4],
 		"layer0.opacity": 1,
-		"layer0.tint": [96, 96, 48],
+		"layer0.tint": ${palette.ui.tab_close_button_default.rgb},
 
 		"layer1.texture": "Theme - BespokePixels/media/close.png",
 		"layer1.inner_margin": [4, 12, 12, 4],
 		"layer1.opacity": { "target": 0.0, "speed": 1.0, "interpolation": "smoothstep" },
-		"layer1.tint": [178, 178, 89],
+		"layer1.tint": ${palette.ui.tab_close_button_selected.rgb},
 
 		"layer2.texture": "Theme - BespokePixels/media/circle.png",
 		"layer2.inner_margin": [4, 12, 12, 4],
 		"layer2.opacity": 0,
-		"layer2.tint": [153, 47, 47],
+		"layer2.tint": ${palette.ui.tab_close_button_dirty.rgb},
 
 		"layer3.texture": "Theme - BespokePixels/media/circle.png",
 		"layer3.inner_margin": [4, 12, 12, 4],
 		"layer3.opacity": { "target": 0.0, "speed": 1.0, "interpolation": "smoothstep" },
-		"layer3.tint": [204, 21, 21]
+		"layer3.tint": ${palette.ui.tab_close_button_dirty_selected.rgb},
 	},
 	{
 		"class": "tab_close_button",
@@ -82,7 +82,7 @@
 		"layer1.opacity": 1,
 		"layer2.opacity": 0,
 		"layer3.opacity": 0,
-		"layer1.tint": [21, 204, 21]
+		"layer1.tint": ${palette.ui.tab_close_button_hover.rgb},
 	},
 	{
 		"class": "tab_close_button",
@@ -91,7 +91,7 @@
 		"layer1.opacity": 1,
 		"layer2.opacity": 0,
 		"layer3.opacity": 0,
-		"layer1.tint": [204, 21, 21]
+		"layer1.tint": ${palette.ui.tab_close_button_dirty_hover.rgb},
 	},
 
 	// Tab close button pressed
@@ -107,11 +107,11 @@
 		"content_margin": [0, 5, 20, 8],
 		"layer0.texture": "Theme - BespokePixels/media/tabset-left.png",
 		"layer0.inner_margin": [5, 1, 12, 12],
-		"layer0.tint": [178, 178, 89],
+		"layer0.tint": ${palette.ui.tab_close_button_default.rgb},
 		"layer0.opacity": 1.0,
 		"layer1.texture": "Theme - BespokePixels/media/tabset-left-hover.png",
 		"layer1.inner_margin": [5, 1, 12, 12],
-		"layer1.tint": [255, 255, 128],
+		"layer1.tint": ${palette.ui.tab_close_button_hover.rgb},
 		"layer1.opacity": { "target": 0.0, "speed": 2.0, "interpolation": "smoothstep" }
 	},
 	{
@@ -125,11 +125,11 @@
 		"content_margin": [20, 5, 8, 8],
 		"layer0.texture": "Theme - BespokePixels/media/tabset-right.png",
 		"layer0.inner_margin": [12, 1, 5, 12],
-		"layer0.tint": [178, 178, 89],
+		"layer0.tint": ${palette.ui.tab_close_button_default.rgb},
 		"layer0.opacity": 1.0,
 		"layer1.texture": "Theme - BespokePixels/media/tabset-right-hover.png",
 		"layer1.inner_margin": [12, 1, 5, 12],
-		"layer1.tint": [255, 255, 128],
+		"layer1.tint": ${palette.ui.tab_close_button_hover.rgb},
 		"layer1.opacity": { "target": 0.0, "speed": 2.0, "interpolation": "smoothstep" }
 	},
 	{
@@ -142,10 +142,10 @@
 		"class": "show_tabs_dropdown_button",
 		"content_margin": [9, 7, 8, 6],
 		"layer0.texture": "Theme - BespokePixels/media/tabset-list.png",
-		"layer0.tint": [178, 178, 89],
+		"layer0.tint": ${palette.ui.tab_close_button_default.rgb},
 		"layer0.opacity": 1.0,
 		"layer1.texture": "Theme - BespokePixels/media/tabset-list-hover.png",
-		"layer1.tint": [255, 255, 128],
+		"layer1.tint": ${palette.ui.tab_close_button_hover.rgb},
 		"layer1.opacity": { "target": 0.0, "speed": 2.0, "interpolation": "smoothstep" }
 	},
 	{
