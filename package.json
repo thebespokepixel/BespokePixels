@@ -38,10 +38,15 @@
     "trash": "^6.0.0",
     "xo": "^0.24.0"
   },
+  "ava": {
+    "helpers": [
+      "**/helpers/**/*"
+    ]
+  },
   "xo": {
     "semicolon": false,
     "ignores": [
-      "test/fixtures/**",
+      "test/helpers/**",
       "dist/**"
     ]
   },
