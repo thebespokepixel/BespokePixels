@@ -38,11 +38,6 @@
     "trash": "^6.0.0",
     "xo": "^0.24.0"
   },
-  "ava": {
-    "files": [
-      "!test/fixtures/types/**"
-    ]
-  },
   "xo": {
     "semicolon": false,
     "ignores": [
