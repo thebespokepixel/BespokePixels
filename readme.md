@@ -4,7 +4,7 @@
 
 ##### Status
 
-![Status](<https://img.shields.io/badge/status-Sublime Text-FF9801.svg?style=flat>) [![Greenkeeper](https://badges.greenkeeper.io/MarkGriffiths/BespokePixels.svg)](https://greenkeeper.io/ "Greenkeeper") [![Travis](https://img.shields.io/travis/MarkGriffiths/BespokePixels.svg?branch=master&style=flat&logo=travis)](https://travis-ci.org/MarkGriffiths/BespokePixels "Travis") [![David-developer](https://img.shields.io/david/dev/MarkGriffiths/BespokePixels.svg?branch=master&style=flat)](https://david-dm.org/MarkGriffiths/BespokePixels/master#info=devDependencies "David-developer") [![Gitter](https://img.shields.io/gitter/room/MarkGriffiths/help.svg?style=flat)](https://gitter.im/MarkGriffiths/help?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge "Gitter")   
+![Status](<https://img.shields.io/badge/status-Sublime Text-FF9801>) [![Greenkeeper](https://badges.greenkeeper.io/thebespokepixel/BespokePixels.svg)](https://greenkeeper.io/ "Greenkeeper") [![Travis](https://img.shields.io/travis/com/thebespokepixel/BespokePixels/master?logo=travis)](https://travis-ci.com/thebespokepixel/BespokePixels "Travis") [![David-developer](https://david-dm.org/thebespokepixel/BespokePixels/master/dev-status.svg)](https://david-dm.org/thebespokepixel/BespokePixels/master?type=dev "David-developer")   
 
 
 ## Usage
