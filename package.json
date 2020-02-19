@@ -16,7 +16,7 @@
   "license": "MIT",
   "devDependencies": {
     "@thebespokepixel/badges": "^2.0.1",
-    "@thebespokepixel/oco-colorvalue-ex": "^4.0.3",
+    "@thebespokepixel/oco-colorvalue-ex": "^5.0.0",
     "@thebespokepixel/palette2oco": "^1.0.6",
     "@thebespokepixel/string": "^0.5.10",
     "ava": "^2.3.0",
