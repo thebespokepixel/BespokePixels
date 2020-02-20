@@ -15,7 +15,7 @@
   "author": "Mark Griffiths <mark@thebespokepixel.com> (http://thebespokepixel.com/)",
   "license": "MIT",
   "devDependencies": {
-    "@thebespokepixel/badges": "^2.0.1",
+    "@thebespokepixel/badges": "^3.0.0",
     "@thebespokepixel/oco-colorvalue-ex": "^4.0.3",
     "@thebespokepixel/palette2oco": "^1.0.6",
     "@thebespokepixel/string": "^0.5.10",
