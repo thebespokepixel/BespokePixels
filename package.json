@@ -30,7 +30,7 @@
     "gulp-template": "^5.0.0",
     "gulp-yaml": "^2.0.4",
     "js-yaml": "^3.14.0",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "nyc": "^15.1.0",
     "opencolor": "^0.2.0",
     "plist": "^3.0.1",
